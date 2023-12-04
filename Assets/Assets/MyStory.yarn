@@ -1,21 +1,28 @@
-﻿title: Start
-tags:
+﻿title: main
+position: -149,33
 ---
-Narrator: Oh, hello!
-    -> Hi, where am I?
-        Narrator: You're in Unity!
-            -> Oh.
-            <<jump Oh>>
-            -> How did I get here?
-            <<jump Unity>>
+// variable declaration
+
+<<jump Monologo>>
 ===
 
-title: Oh
+title:Monologo
+position: 108,33
 ---
-Narrator: Yeah, fun, right?
-===
-
-title: Unity
----
-Narrator: Someone read the Beginner's Guide!
+Hoy es el día, qué nervios… después de haber ayudado a Apolo como vínculo entre los dioses y los mortales, ahora padezco de esta maldita condición. Sé que cualquiera lo vería como un don. Pero soy demasiado joven para dicha responsabilidad. Me asusta desperdiciar la juventud por el hecho de tener que usar mi don de la clarividencia en servicio al pueblo. Está claro que sería un pilar fácil para cerciorar mi prestigio ante Zeus, pero todo ha sido tan rápido que tendré que abandonar mis aspiraciones, mi familia, y el amor… 
+¿Que debería priorizar?
+-> Decisión 1
+-> Decisión 2
+Desconocido: “…erta”
+Casandra: *¿Una voz?*
+Desconocido: “Despierta…”
+Casandra: ¡!
+(Casandra abre los ojos)
+Casandra: *¿Un sueño? ¿Qué era esa voz?*
+Calíope: Mi niña, es hora de despertar.
+Casandra: Si, maestra.
+Calíope: Hoy es el día, Casandra. Hoy tomarás mi relevo y te convertirás en Oráculo de Delfos.
+Casandra: No es algo que yo desee ser.
+Calíope: Es algo que solo los dioses pueden decidir Casandra. Nosotros solo seguimos sus órdenes. Venga, prepárate. Nos veremos en el templo.
+*Veo como Clío, la mujer que me trató como una hija después de dejar mi hogar, se marcha de mi habitación. Hastiada, decido salir de la cama y me dirijo a las calientes aguas de mis termas personales para purificarme para la ceremonia que me convertirá en Oráculo a los ojos de los dioses y los mortales.*
 ===
