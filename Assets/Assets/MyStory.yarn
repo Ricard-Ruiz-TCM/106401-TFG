@@ -1,25 +1,41 @@
 ﻿title: main
 position: -149,33
 ---
-// variable declaration
+// Estado del juego
+<<declare $state = 0>>
 
+// Speakers, personaje principal que habla & animación para ejecutar
+<<declare $speaker = "">>
+<<declare $speaker_anim = "">>
+// Speakers, el resto de personajes al 50% 
+<<declare $speaker_others = "">>
+
+// Sonido FX que sonará una sola vez
+<<declare $audio_fx = "">>
+// Música que sonará de fondo, solo 1 a la vez
+<<declare $audio_music = "">>
+
+// In-Game variables to use 
 <<jump Monologo>>
 ===
 
 title:Monologo
 position: 108,33
 ---
+<<set $state = 1>>
 Hoy es el día, qué nervios… después de haber ayudado a Apolo como vínculo entre los dioses y los mortales, ahora padezco de esta maldita condición. Sé que cualquiera lo vería como un don. Pero soy demasiado joven para dicha responsabilidad. Me asusta desperdiciar la juventud por el hecho de tener que usar mi don de la clarividencia en servicio al pueblo. Está claro que sería un pilar fácil para cerciorar mi prestigio ante Zeus, pero todo ha sido tan rápido que tendré que abandonar mis aspiraciones, mi familia, y el amor… 
 ¿Que debería priorizar?
 -> Decisión 1
 -> Decisión 2
 Desconocido: “…erta”
+<<set $state = 2>>
 Casandra: *¿Una voz?*
 Desconocido: “Despierta…”
 Casandra: ¡!
 (Casandra abre los ojos)
 Casandra: *¿Un sueño? ¿Qué era esa voz?*
 Calíope: Mi niña, es hora de despertar.
+<<set $state = 3>>
 Casandra: Si, maestra.
 Calíope: Hoy es el día, Casandra. Hoy tomarás mi relevo y te convertirás en Oráculo de Delfos.
 Casandra: No es algo que yo desee ser.
