@@ -4,6 +4,9 @@ position: -2,12
 // Estado del juego
 <<declare $state = 0>>
 
+// Registro de opciones/nodos
+<<declare $path = "">>
+
 // Speakers, personaje principal que habla & animación para ejecutar
 <<declare $speaker = "">>
 <<declare $speaker_anim = "">>
@@ -60,10 +63,8 @@ LISANDER: ¡Casandra! Hoy es el gran día. ¿Cómo te sientes?
 CASANDRA:
     -> Digo la verdad “Pues verás estoy algo angustiada con esta nueva vida que me depara.”
         LISANDER: Es normal, se que es una vida que no te esperabas, pero el don de la clarividencia conlleva una gran responsabilidad. Además estaremos juntos en esta travesía y pase lo que pase siempre podrás contar conmigo.
-
     -> Miento a Lisander para que no sufra por mi “Muy bien, ¡lista para partir!”
         LISANDER: Nunca se te ha dado bien mentir, esa mueca siempre te delata. Se que es una vida que no te esperabas, pero el don de la clarividencia conlleva una gran responsabilidad. Además estaremos juntos en esta travesía y pase lo que pase siempre podrás contar conmigo.
-
 CASANDRA: Ya lo se.. Pero no será lo mismo.
 LISANDER: Vivir es un cambio continuo. ¡Al igual que tus ojos! Ahora son dorados cuando antes eran marrón roble. Ambos son diferentes y bellos, ya que da igual de que color sean, mientras sean los tuyos.
 Mis mejillas se ruborizan y Lisander se torna rojo. Indecisos de que decir o hacer, rompo el silencio.
@@ -104,7 +105,6 @@ CASANDRA:
     -> Eso de allí parece una cueva. Ven conmigo.
     LISANDER: No parece un lugar muy seguro donde descansar. Nunca me gustaron las cavernas.
     <<jump CHAPTER_2_1>>
-
     -> A lo lejos me parece ver unas luces, sigamos en esa dirección.
     LISANDER: Si tu lo dices.
     <<jump CHAPTER_2_2>>
@@ -129,26 +129,174 @@ CASANDRA:
         HOMBRE 2 DE LA CAVERNA (enfadado): ¿Cómo fuiste tan temeraria para matar a mi amigo?
         CASANDRA (asustada y temblando): Y-Y-Yoo…
         Lisander se acercó hacia mi y me abrazó intensamente. Nos sentamos en el suelo y me cantó la nana de mi
-
         -> Es un amuleto de culto de la diosa Hécate. La diosa de la magia y el infierno. Si osáis arrebatarme el amuleto, ¡Hécate desatará su ira por vuestros actos impuros!
         Los hombres absortos y asustados, se doblegan ante el poder de Hécate y deciden marcharse de la cueva. Una vez solos, el cansancio invadió nuestros cuerpos, nos sentamos en el suelo de la cueva y descansamos hasta el regreso de Apolo.
-
     -> Uso mi daga contra los hombres.
     Los hombres sacan sus cuchillos de caza y se dirigen hacia mi para atacarme. Es entonces cuando decido…
-    
+    CASANDRA:
+        -> Usar el don de la clarividencia para ver los movimientos de los hombres.
+            No tengo mucha experiencia con el don, por lo que pido ayuda a Apolo. El dios me muestra visiones de los inminentes ataques. Con el conocimiento de Apolo consigo esquivar y contraatacar los ataques de los hombres. Lisander les desarma y los hombres asustados, nos suplican clemencia. 
+            CASANDRA :¡Marchaos y no volváis! La caverna alberga horrores y los dioses usarán su furia si no cambiáis de filosofía de vida.
+            Una vez solos, el cansancio invadió nuestros cuerpos, nos sentamos en el suelo de la cueva e intentamos descansar hasta el regreso de Apolo. 
+        -> No uso mi don, aún no se utilizarlo.
+            Los hombres me desarman. Lisander actúa en mi socorro, usando la fuerza coge una roca de la cueva y les golpea en la cabeza, dejándolos inconscientes. 
+            APOLO (telepáticamente): No me ha gustado tu decisión, posees un gran don y debes atreverte a usarlo. Has puesto dos vidas en peligro, la de tu amigo y la tuya, todo por miedo.
+            CASANDRA (telepáticamente): Lo siento Apolo, mi mente colapsó ante el miedo y la inseguridad.
+            CASANDRA (llorosa): Lisander, lo siento muchísimo. El miedo se apoderó de mi mente y no supe como actuar.
+            Lisander se acercó hacia mi y me abrazó intensamente. Nos sentamos en el suelo y le canté la nana de mi madre. No paramos de llorar hasta ver la luz de Apolo iluminar la salida de la cueva. 
 
-<<jump CHAPTER_2_CONTINUATION>>
+<<jump CHAPTER_2_APOLO_DREAM>>
 ===
 
 title: CHAPTER_2_2
 position: 633,344
 ---
+<<set $background = "2. INT. REFUGIO DESCONOCIDO - NOCHE">>
+Nos acercamos hacia las luces que a medida que nos aproximamos se tornan más intensas y cálidas. Las luces provienen de un refugio en buen estado. Lisander decide llamar a la puerta y tras unos instantes, nos abre la puerta una mujer.
+MUJER REFUGIO (sorprendida): ¡Por los dioses! Entrad ahora mismo, pues corréis peligro afuera.
+Lisander y yo no dudamos en hacer caso a la mujer. Entramos en la el refugio, un lugar cálido y humilde, me recuerda a mi hogar. En una mecedora de madera se encuentra un hombre calentándose las manos en el hogar, supongo que será el marido.
+MUJER REFUGIO: Seguro que estaréis cansados, ¿queréis algo de pan y agua? 
+CASANDRA: Gracias, toda ofrenda es bienvenida. Sin embargo, disponemos de víveres y no queremos disponer más de lo necesario.
+MARIDO REFUGIO: ¡Insistimos comed! Sois jóvenes, necesitáis sustento. Si no es mucha molestia, ¿puedo preguntaros que os trae por estas tierras?
+LISANDER: Vamos hacia Atenas en busca de una cura para mi madre enferma.
+MARIDO REFUGIO (comprensivo): La desdicha de los dioses nos afecta a los mortales. Nosotros vamos hacia Micenas, buscamos un mejor futuro. Todo a pesar de que se nos considere extranjeros y no ciudadanos, pues procedemos de unas tierras de Oriente.
+CASANDRA (apenada):
+    -> Uso mi don.
+        Decido pedir ayuda a Apolo. El dios me guía, enseñándome el futuro de la pareja. Veo cómo llegan a Micenas y se les cierran las puertas por su carecer de riqueza material para pagar los impuestos de la polis.
+    -> Uso mis palabras. 
+        CASANDRA (preocupada): Micenas es una de las polis más ricas de Grecia. Creo recordar que tiene unos impuestos muy altos para sus ciudadanos.
+        MUJER REFUGIO: No nos queda otra, nuestra casa quedó destrozada por una inundación. Solo queremos un lugar donde vivir a salvo y en paz, un lugar donde empezar de cero. Micenas es un lugar donde la educación es bien preciada. Pues queremos un futuro de calidad para nuestro hijo.
+        La mujer pone sus manos en su vientre, ligeramente abultado. Me invade un sentimiento de desconsuelo y decido comunicarme con Apolo.
+CASANDRA (preocupada): ¿Apolo hay alguna forma de ayudarlos?
+APOLO: Siempre se puede intentar y tu don te ayudará a conseguirlo. Aunque estoy algo cansado para enseñarte así que, hazme caso. Para ayudar al prójimo en esta ocasión, una donación será suficiente.
+Una vez todos estaban dormidos, me dirigí sigilosamente hasta el morral de la pareja. Lo abrí y coloqué…
+
+CASANDRA:
+    -> una daga
+        APOLO: ¿Estas segura de donar tu única arma?
+        CASANDRA: Sí.
+        La daga se torna dorada, tan dorada como el mismísimo elemento natural. Una donación con bondad se transforma en un recurso de gran valor material. Dejo la daga en el morral.
+        CASANDRA: Gracias Apolo.
+    -> una manzana
+        APOLO: ¿Por qué de todas las frutas, has elegido la manzana?
+        CASANDRA: Pues no lo sé, sentí que tenia que cogerla.
+        APOLO: Bien, ahora parte la manzana en tres partes.
+        Saco mi daga y obedezco sus ordenes, dejando las porciones dentro del morral. Entonces, los trozos se transforman en oro. Una donación con bondad se transforma en un recurso de gran valor material.
+        CASANDRA: Gracias Apolo.
+        APOLO: Por último, a mi regreso, cuando todos hayáis descansado. Dirígete a la pareja y diles que entreguen estos trozos en los templos de Atenea, Hera y Afrodita para limar las asperezas entre las diosas, culpables de originar la guerra de Troya.
+        CASANDRA :De acuerdo.
+        Vuelvo a mi lecho y caigo rendida del cansancio y alivio.
+
+<<jump CHAPTER_2_APOLO_DREAM>>
+===
+
+title:CHAPTER_2_APOLO_DREAM
+position: 350,597
+----
+Abro los ojos y estoy en un lugar diferente, un espacio brillante y etéreo. Aparece Apolo en frente de mi.
+
+— Según las decisiones tomadas el sueño es diferente —
+
+// (Si las Decisiones del Capitulo 2 son (1-1-2) o (1-2-2) = Cueva - Viajeros - Hécate (1-1-2) o Cueva - Viajeros - Mentira origen Collar (1-1-1) o Cueva - Daga - No usa don (1-2-2))
+<<if $path == "112" || $path == "122" || $path == "111">>
+    APOLO: Buenas noches Casandra, estoy aquí para recordarte lo valioso que es tu don. 
+    CASANDRA: Yo nunca quise este don, y no entiendo porque no respetas mis decisiones. Aunque no haya usado mi don, Lisander y yo seguimos vivos, así que confía en mi.
+    APOLO: La confianza es mas valiosa que el amor. Y debes entender que mi amor hacia ti es incondicional, por lo que ya confío en tu bondad y conozco tus cualidades mortales. Que no son perfectas, pues los mortales disponéis de imperfecciones como los dioses. Unas imperfecciones que nos hacen crecer. Me hayo aquí en tus sueños, declarando mi amor hacia ti, una mortal bondadosa que posee el don de la clarividencia. Un don valioso para un alma valiosa.
+
+// (Si las Decisiones del Capitulo 2 son (1-2-1) = Cueva - Daga - Usa don (1-2-1))
+<<elseif $path == "121">>
+    APOLO: Buenas noches Casandra, espero que empieces a valorar el don de la clarividencia. Me alivia ver que has usado este don, pero deber ser mas sensata, has tomado decisiones peligrosas.
+    CASANDRA: No me imaginaba que te preocuparas tanto por mi…
+    APOLO: Siempre.
+
+// (Si las Decisiones del Capitulo 2 son (2-1-1) o (2-2-1) = Refugio- Don o palabras- Daga)
+<<elseif $path == "211" || $path == "221">>
+    APOLO: Buenas noches Casandra, estoy preocupado por ti. Donar tu daga al prójimo, tu único elemento de protección, es arriesgado.
+    CASANDRA: Tranquilo, mi bienestar no importa si consigo mejorar la vida del prójimo.
+    APOLO (sonriendo): Me hace feliz ver que acerté eligiéndote a ti Casandra. Ahora deberás confiar plenamente en Lisander pues debéis protegeros el uno al otro.
+// (Si las Decisiones del Capitulo 2 son (2-1-2) o (2-2-2) = Refugio - Don o palabras - Manzana)
+<<elseif $path == "212" || $path == "222">>
+    CASANDRA: Hola Apolo, tengo una duda, ¿porqué debía dividir la manzana para las tres diosas?
+    APOLO: Los diosas son poderosas y la ofrenda equitativa evitará futuras enfrentas entre ellas. Ya hubo una guerra y no debería haber otra.
+    CASANDRA: ¿Y porque hubo tal confrontación?
+    APOLO (triste): Verás… una manzana de oro se tenía que dar a la diosa más bella, Afrodita, Hera y Atenea afirmaban ser dicha diosa. Así se originó la confrontación entre ellas. 
+    CASANDRA: No comprendo, ¿no se podría haber repartido la manzana entre ellas?
+    APOLO (sonriendo): Las cosas no son tan simples Casandra, el orgullo de los dioses puede ser peor que el de los mortales. Debido a esta disputa, se originó la guerra de Troya, un conflicto que enfrentó a la polis con el resto de Grecia. Los dioses hacen cosas de las que nos arrepentimos.
+    CASANDRA: ¿Tu de que te arrepientes haber hecho?
+    APOLO: … Mejor descansa Casandra.
+<<endif>>
 
 <<jump CHAPTER_2_CONTINUATION>>
 ===
 
 title:CHAPTER_2_CONTINUATION
-position: 369,615
+position: 197,863
 ----
+Me despierto con la luz de Apolo y con las fuerzas recargadas.
+<<set $background = "1. INT. CUEVA - DIA">>
+Veo como Lisander prepara el desayuno. Nos miramos y observamos el nuevo día soleado que ha dejado la tormenta de anoche.
+LISANDER: Buenos días Casandra. ¿Quieres comer higos?
+CASANDRA: Buenos días Lisander. ¡Claro! No tengo mucho apetito pero un higo es irrechazable. 
+LISANDER (Sonriendo): ¡Bien! Como puedes ver después de la tormenta viene la calma. Así pues, venga que la vida sigue y Delfos nos espera.
+Acabamos de desayunar, reunimos nuestros haberes y salimos de la cueva.
+
+<<set $background = "2. INT. REFUGIO DESCONOCIDO - DIA">>
+Lisander y yo vemos a la pareja comiendo y hablando animadamente.
+LISANDER: ¿Va todo bien?
+MARIDO REFUGIO (entusiasmado): ¡Hemos sido bendecidos con un regalo de los dioses! ¡¡Oro!!
+Lisander se queda perplejo mirando el oro. Después me mira con una cara de felicidad, creo que sabe que Apolo tuvo algo que ver.
+// Si Casandra dejo una manzana (Si las Decisiones del Capitulo 2 son (2-1-2) o (2-2-2) = Refugio - Don o palabras - Manzana)—
+<<if $path == "212" || $path == "222">>
+    Después de desayunar higos con Lisander y antes de partir me acerco a la pareja.
+    CASANDRA: Antes de marchar, debo deciros que las piezas de oro que habéis recibido son ofrendas que debéis entregar a los templos de Atenea, Hera y Afrodita. Según Apolo, estas ofrendas darán fin a la confrontación entre las diosas y evitará que se vuelvan a provocar guerras.
+    MUJER REFUGIO: Nunca habíamos tenido una misión tan importante. Gracias Casandra, haremos lo que nos pides. 
+    CASANDRA: Mucha suerte y próspera vida en Micenas.
+    Poco más tarde, salimos del refugio y observamos el nuevo día soleado que ha dejado la tormenta de anoche.
+<<endif>>
+
+<<set $background = "EXT. CORINTIA - DIA">>
+Me pregunto como retomar la marcha.
+APOLO (telepáticamente): Buenos días Casandra.
+CASANDRA (telepáticamente): Buenos días Apolo, no sabemos como retomar la travesía, la tormenta nos ha desorientado.
+APOLO (telepáticamente): Tranquilos, caminad hasta la próxima aldea hacia las montañas verdes del horizonte, allí encontrareis a un herrero que os ayudará. Es un viejo amigo mío.
+CASANDRA (telepáticamente): Gracias Apolo.
+Retomamos el viaje, ahora con un rumbo definido. 
+
+<<set $background = "EXT. ALDEA DE PLATEA - MEDIODIA">>
+Unas horas más tarde, llegamos a una aldea y preguntamos por el herrero. 
+CIRILO: He oído que buscáis a un herrero.
+CASANDRA: Así es, Apolo nos ha guiado hasta esta aldea y buscamos a su viejo amigo Cirilo, un herrero.
+CIRILO: Pues habéis dado en el clavo, mi nombre es Cirilo y soy el herrero de Platea.
+CASANDRA: Vaya, ha sido mas fácil de lo esperado. Hemos acudido a ti para que nos suministres armas y consejos para la travesía.
+CIRILO: ¿Yo, consejos de travesía? ¿Por quién me tomáis? Mi vida es el hierro y la forja, siempre he venerado al dios Efesto. Ese es mi consejo, tratad bien a los dioses y ellos harán los mismo por vosotros.
+CASANDRA: Son unas palabras muy sabias, Cirilo. 
+El noble herrero nos conduce a su forja. Un antro lleno de ceniza y hierro, la temperatura de aquel lugar sobrepasaba los días de verano en Asea.
+CIRILO: Y bien, ¿Qué armas queréis?
+LISANDER: Pues una espada y un cuchillo
+CIRILO: Bien, últimamente ando escaso de hierro, solo podré fabricar una arma. 
+CASANDRA: Pues cogeremos…
+    -> Una espada
+    -> Un cuchillo
+CIRILO: En una hora estará.
+Lisander y yo recorremos la aldea. Hambrientos buscamos un lugar donde comer nuestros víveres a gusto. Mientras comemos, una mujer apuesta se aproxima a nosotros.
+EVANTHE: Hola, me llamo Evanthe. No he podido evitar fijarme en vosotros. ¿Sois viajeros?
+LISANDER: Efectivamente, venimos de la región de Arcadia y nos dirigimos a Delfos.
+EVANTHE: ¡Delfos! Hace 3 solsticios viajé a Delfos, es un lugar muy hermoso y con personas muy especiales…
+CASANDRA: ¿Tú también eres una viajera?
+EVANTHE: Así es, una viajera crónica, como digo yo. Voy recorriendo las tierras de Grecia y cuando reúna las riquezas suficientes, quiero viajar a Oriente.
+LISANDER: Pareces una aventurera nata. ¿Tienes algún consejo para nuestro viaje?
+EVANTHE: Uhm… déjame pensar… Bueno como mujer viajera, he vivido mil y una experiencias tanto buenas como malas. Pero al final lo importante es vivir el momento. 
+CASANDRA: Gracias Evanthe, tus palabras son sabias.
+EVANTHE: ¡Pero oye! Aún no he decido cuál será mi próximo destino, si queréis os puedo guiar hasta Delfos.
+LISANDER: ¡Nos sería de gran ayuda! Una mujer tan apuesta y aventurera como tú puede hacer lo que quiera.
+Evanthe se unió a nosotros, fuimos a por el arma y nos despedimos de Cirilo y de la aldea de Platea.
+
+<<jump CHAPTER_3>>
+===
+
+title:CHAPTER_3
+position: 475,874
+----
+
 
 ===
