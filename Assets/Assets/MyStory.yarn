@@ -34,11 +34,6 @@ position: 307,-27
 ---
 <<set $full_path = "Chapter - 1: ">>
 <<set $background = "INT. CASA DE CASANDRA - DÍA">>
-APOLO: … erta
-CASANDRA (OFF): ¿Una voz?
-APOLO: Despierta…
-Abro los ojos, no recuerdo como me dormí pero por suerte no tuve ningún mal sueño…
-CASANDRA (OFF):¿Un sueño? ¿Qué era esa voz?
 ADARA: Mi niña, es hora de despertar.
 CASANDRA: Si, madre.
 ADARA: Cariño, hoy es el día. Hoy será el inicio de tu nueva vida. 
@@ -94,7 +89,7 @@ CASANDRA: Gracias Clío, con Hécate a nuestro lado estaremos mucho más a salvo
 ===
 
 title:CHAPTER_2
-position: 325,196
+position: 323,228
 ---
 <<set $full_path = $full_path + $path + " Chapter - 2: ">>
 <<set $path = "">>
@@ -123,7 +118,7 @@ CASANDRA:
 ===
 
 title:CHAPTER_2_1
-position: 123,380
+position: 37,409
 ---
 <<set $background = "1. INT. CUEVA - NOCHE">>
 Lisander y yo nos adentramos en la cueva. Criaturas voladoras salían despedidas al vernos encender una antorcha. Avanzamos hacia el interior de la cueva y vemos una luz acercarse a nosotros. Se trataban de dos hombres, dos individuos que no parecían ir en son de paz.
@@ -212,7 +207,7 @@ CASANDRA:
 ===
 
 title:CHAPTER_2_APOLO_DREAM
-position: 350,597
+position: 291,632
 ----
 Abro los ojos y estoy en un lugar diferente, un espacio brillante y etéreo. Aparece Apolo en frente de mi.
 // (Si las Decisiones del Capitulo 2 son (1-1-2) o (1-2-2) = Cueva - Viajeros - Hécate (1-1-2) o Cueva - Viajeros - Mentira origen Collar (1-1-1) o Cueva - Daga - No usa don (1-2-2))
@@ -250,7 +245,7 @@ Abro los ojos y estoy en un lugar diferente, un espacio brillante y etéreo. Apa
 ===
 
 title:CHAPTER_2_CONTINUATION
-position: 180,819
+position: 131,859
 ----
 Me despierto con la luz de Apolo y con las fuerzas recargadas.
 <<set $background = "1. INT. CUEVA - DIA">>
@@ -319,7 +314,7 @@ Evanthe se unió a nosotros, fuimos a por el arma y nos despedimos de Cirilo y d
 ===
 
 title:CHAPTER_3
-position: 527,851
+position: 598,777
 ----
 <<set $full_path = $full_path + $path + " Chapter - 3: ">>
 <<set $path = "">>
@@ -421,7 +416,7 @@ CASANDRA:
                 Se iluminó mi colgante nada más indicar mi conformidad por continuar todos juntos. Y con el colgante, se iluminó el sendero como si este estuviera indicando el camino que debíamos seguir.
                 CASANDRA: Espléndido. Sigamos la luz.
                 LISANDER: Casandra, ¿estás bien? Se te nota ligeramente indolente.
-                CASANDRA: Sí, sí, gracias. Es solo que, a veces me resulta una enorme dificultad encontrarme sola. La soledad y la incertidumbre me abruman. Antes de que todo esto sucediera, yo era una humilde granjera que se encargaba de pastorear el ganado y cuidar a mi familia. Tenía una vida que amaba. Toda esta insensatez sobre don apareció repentinamente. Apolo me lo otorgó por haberle ayudado anteriormente. Este adoptó el aspecto de un anciano enfermo y yo iba a verle todos los días para que no le faltase de nada. 
+                CASANDRA: Sí, sí, gracias. Es solo que, a veces me resulta una enorme dificultad encontrarme sola. La soledad y la incertidumbre me abruman. Antes de que todo esto sucediera, yo era una humilde granjera que se encargaba de pastorear el ganado y cuidar a mi familia. Tenía una vida que amaba. Toda esta insensatez sobre don apareció repentinamente. Apolo me lo otorgó por haberle ayudado anteriormente. Este adoptó el aspecto de un anciano enfermo y yo iba a verle todos los días para que no le faltase de nada.
                 Lisander me abrazó.
                 LISANDER: Siempre has sido una chica muy fuerte. Y aunque pueda parecer difícil, este don es parte de ti, parte de lo que eres. Plenamente merecedora de este don. Y no estás sola.
                 EVANTHE: Es cierto, no lo estás. Y aunque ahora lo consideres como una carga, es una bendición. Y aunque haya sufrimiento, también hay esperanza. Debemos confiar en la sabiduría y conocimiento de los dioses. Apolo sí sabía lo que estaba haciendo.
@@ -466,7 +461,7 @@ Continuamos con nuestro camino..
 ===
 
 title:CHAPTER_4
-position: 490,1009
+position: 524,1080
 ----
 <<set $full_path = $full_path + $path + " Chapter - 4: ">>
 <<set $path = "">>
@@ -537,61 +532,30 @@ Salgo del lecho y me dirijo hacia el templo de la ceremonia.
 ===
 
 title:CHAPTER_5
-position: 241,1188
+position: 155,1203
 ----
 <<set $full_path = $full_path + $path + " Chapter - 5: ">>
 <<set $path = "">>
 <<set $background = "INT. TEMPLO DEL ORÁCULO - MAÑANA">> 
 Ante las gigantescas puertas del templo, pienso en todas las vivencias que he tenido en mis 18 solsticios de vida. Con la respuesta de mi futuro en mis manos, entro en el templo. Es un evento íntimo entre los distinguidos del oráculo y mis conocidos. Camino hasta el altar de Apolo y me dirijo a los invitados de la ceremonia.
-
-CASANDRA: 
-
-Al principio no deseaba el don de la clarividencia y lo veía como una carga, con el tiempo he ido entendiendo mi destino y ahora me siento feliz de haber podido acercarme a Apolo.
+CASANDRA:  Al principio no deseaba el don de la clarividencia y lo veía como una carga, con el tiempo he ido entendiendo mi destino y ahora me siento feliz de haber podido acercarme a Apolo.
 En aquel instante, Apolo se materializa delante de mí. 
-
-APOLO: 
-
-Y bien, ¿Cuál es tu decisión Casandra?
-
+APOLO: Y bien, ¿Cuál es tu decisión Casandra?
 CASANDRA: 
-
-1. Ser oráculo de Delfos.
-2. Rechazar el don de Apolo. 
-1. 
-    
-    Apolo sonríe y me abraza con fuerza.
-    
-    APOLO: 
-    
-    Agradezco que quieras seguir con el destino que te confié. A pesar de que mis motivos iniciales fueran egoístas. 
-    
-    Apolo se aparta de mí y me confiere el aspecto de una oráculo: una túnica blanca con cinturón, joyas de oro y por último, una corona de laurel, símbolo de Apolo.
-    
-    Bajo del altar y los invitados se dirigen hacia mí alegremente. Calíope me abraza con alegría, Clío y Evanthe me felicitan. Lisander me abraza fuertemente y me confiesa que vivirá en la aldea de Delfos con su comprometida, Evanthe. Me invade la felicidad y les deseo un buen futuro y un largo romance. 
-    
-    Miro al cielo, viendo como el sol brilla más de lo normal y escucho las promesas de Apolo sobre un futuro mejor, un futuro en el que Apolo y yo estamos unidos.
-    
-                                                                              FIN
-    
-2. 
-    
-    Apolo me sonríe apenado, pero también comprensivo. Usa su magia para quitarme el don, mis ojos vuelven a ser marrones debido a la falta de magia. Apolo y yo nos miramos sonriendo.
-    
-    APOLO: 
-    
-    Casandra, estoy seguro de que tendrás una buena vida, te cuidaré desde los cielos. 
-    
-    Apolo desaparece y bajo del altar. Los invitados se dirigen hacia mí. Calíope parece algo triste, pero entiende y acepta mi decisión. Continua su búsqueda de un nuevo oráculo y Phineas acude al instante intentando llamar la atención de la sacerdotisa. Calíope le intimida con sus dones y Phineas acaba marchando achantado.
-    
-    Agradezco a Clío su ayuda para tomar mi decisión. Ella me dice que siempre había sido una alternativa posible y que solo me ofreció unos conocimientos para escuchar a mi corazón. Abrazo a Clío, marcando en inicio de una bonita amistad.
-    
-    Lisander se aparta de Evanthe y se dirige a mí con una sonrisa en su rostro. Después de abrazarme intensamente, declara el amor que siente por su vecina de Asea, una joven muchacha llamada Casandra. 
-    
-    Evanthe se entristece de no ser correspondida por Lisander y al día siguiente inicia el viaje a Oriente que siempre había querido realizar. 
-    
-    Lisander y yo nos miramos llenos de felicidad e iniciamos una nueva travesía de felicidad y alegría con un beso de amor verdadero.
-    
-                                                                              FIN
-
-
+    -> Ser oráculo de Delfos.
+        Apolo sonríe y me abraza con fuerza.
+        APOLO: Agradezco que quieras seguir con el destino que te confié. A pesar de que mis motivos iniciales fueran egoístas. 
+        Apolo se aparta de mí y me confiere el aspecto de una oráculo: una túnica blanca con cinturón, joyas de oro y por último, una corona de laurel, símbolo de Apolo.
+        Bajo del altar y los invitados se dirigen hacia mí alegremente. Calíope me abraza con alegría, Clío y Evanthe me felicitan. Lisander me abraza fuertemente y me confiesa que vivirá en la aldea de Delfos con su comprometida, Evanthe. Me invade la felicidad y les deseo un buen futuro y un largo romance. 
+        Miro al cielo, viendo como el sol brilla más de lo normal y escucho las promesas de Apolo sobre un futuro mejor, un futuro en el que Apolo y yo estamos unidos.
+        FIN
+    ->Rechazar el don de Apolo. 
+        Apolo me sonríe apenado, pero también comprensivo. Usa su magia para quitarme el don, mis ojos vuelven a ser marrones debido a la falta de magia. Apolo y yo nos miramos sonriendo.
+        APOLO: Casandra, estoy seguro de que tendrás una buena vida, te cuidaré desde los cielos. 
+        Apolo desaparece y bajo del altar. Los invitados se dirigen hacia mí. Calíope parece algo triste, pero entiende y acepta mi decisión. Continua su búsqueda de un nuevo oráculo y Phineas acude al instante intentando llamar la atención de la sacerdotisa. Calíope le intimida con sus dones y Phineas acaba marchando achantado.
+        Agradezco a Clío su ayuda para tomar mi decisión. Ella me dice que siempre había sido una alternativa posible y que solo me ofreció unos conocimientos para escuchar a mi corazón. Abrazo a Clío, marcando en inicio de una bonita amistad.
+        Lisander se aparta de Evanthe y se dirige a mí con una sonrisa en su rostro. Después de abrazarme intensamente, declara el amor que siente por su vecina de Asea, una joven muchacha llamada Casandra. 
+        Evanthe se entristece de no ser correspondida por Lisander y al día siguiente inicia el viaje a Oriente que siempre había querido realizar. 
+        Lisander y yo nos miramos llenos de felicidad e iniciamos una nueva travesía de felicidad y alegría con un beso de amor verdadero.
+        FIN
 ===
