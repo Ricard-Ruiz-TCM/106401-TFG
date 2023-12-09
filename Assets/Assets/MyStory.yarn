@@ -44,7 +44,7 @@ Adara, la mujer más importante de mi vida, se marcha de mi habitación. Hastiad
 <<set $background = "EXT. ARROYO DE ASEA - DÍA">>
 Entro en las aguas echando un profundo suspiro. El inicio de mi viaje a Delfos, el día que más temía que llegara, ya está aquí.
 CASANDRA: Maldigo mi suerte. ¿Por qué me sucedió esto? Nunca quise ser oráculo. Fue Apolo quien me dio mis poderes sin yo siquiera desearlos.
-APOLO: Quien no desea algo, es el más indicado para usarlo, niña.
+APOLO (telepáticamente): Quien no desea algo, es el más indicado para usarlo, niña.
 CASANDRA: ¿Apolo?
 Mi visión se oscurece y noto un cambio de entorno. Parpadeo un par de veces y delante de mi está la brillante figura de Apolo.
 APOLO: Sabes perfectamente porque te elegí para ser la próxima oráculo, Casandra.
@@ -53,14 +53,14 @@ APOLO: Quería saber si eras de fiar, si eras merecedora de mis poderes. Llevaba
 CASANDRA: ¿Predecir el futuro de la gente es ayudarlos? ¡Es volverlos paranoicos! Es hacer que se destruyan a si mismos, pensando que pueden huir de su destino cuando jamás podrán hacerlo.
 APOLO: En eso te equivocas, Casandra. El futuro se puede cambiar, es algo que aun no has visto. Pero lo experimentarás pronto.
 Apolo desaparece, mi visión vuelve a ver las aguas del arroyo.
-CASANDRA: ¿Qué quieres decir con eso? ¡Oye! … Me he quedado sola.
+CASANDRA: ¿Qué quieres decir con eso? ¡Oye! 
+… Me he quedado sola.
 
 <<set $background = "EXT. CASA DE CASANDRA - DÍA">>
 Ya aseada y vestida, salgo de mi humilde morada.
 Avanzo un poco más, encontrándome a Lisander, mi mejor amigo y nuevo escolta. Nos conocemos de toda la vida, hemos crecido juntos en Asea, nunca se nos habría ocurrido marchar de Arcadia, y ahora míranos, ambos zarpando de nuestro hogar hacia uno de los Oráculos más importantes Grecia.
 CASANDRA: Hola Lisander.
 LISANDER: ¡Casandra! Hoy es el gran día. ¿Cómo te sientes?
-CASANDRA:
     -> Digo la verdad “Pues verás estoy algo angustiada con esta nueva vida que me depara.”
         <<set $path = $path + "1">>
         LISANDER: Es normal, se que es una vida que no te esperabas, pero el don de la clarividencia conlleva una gran responsabilidad. Además estaremos juntos en esta travesía y pase lo que pase siempre podrás contar conmigo.
