@@ -34,7 +34,7 @@ position: 72,29
 ---
 <<set $full_path = "Chapter - 1: ">>
 <<set $path = "">>
-<<set $background = "INT. CASA DE CASANDRA - DÍA">>
+<<set $background = "INT. CASA DE CASANDRA - DIA">>
 ADARA: Mi niña, es hora de despertar.
 CASANDRA: Si, madre.
 ADARA: Cariño, hoy es el día. Hoy será el inicio de tu nueva vida. 
@@ -42,7 +42,7 @@ CASANDRA: Una nueva vida que no desee tener. No quiero dejar a mi familia.
 ADARA: Es algo que solo los dioses pueden decidir Casandra. Nosotros solo seguimos sus órdenes. Venga, prepárate.
 Adara, la mujer más importante de mi vida, se marcha de mi habitación. Hastiada, decido salir de la cama y me dirijo al pequeño arroyo donde me purifico para emprender el viaje que me convertirá en Oráculo a los ojos de los dioses y los mortales.
 
-<<set $background = "EXT. ARROYO DE ASEA - DÍA">>
+<<set $background = "EXT. ARROYO DE ASEA - DIA">>
 Entro en las aguas echando un profundo suspiro. El inicio de mi viaje a Delfos, el día que más temía que llegara, ya está aquí.
 CASANDRA: Maldigo mi suerte. ¿Por qué me sucedió esto? Nunca quise ser oráculo. Fue Apolo quien me dio mis poderes sin yo siquiera desearlos.
 APOLO (telepáticamente): Quien no desea algo, es el más indicado para usarlo, niña.
@@ -57,7 +57,7 @@ Apolo desaparece, mi visión vuelve a ver las aguas del arroyo.
 CASANDRA: ¿Qué quieres decir con eso? ¡Oye! 
 … Me he quedado sola.
 
-<<set $background = "EXT. CASA DE CASANDRA - DÍA">>
+<<set $background = "EXT. CASA DE CASANDRA - DIA">>
 Ya aseada y vestida, salgo de mi humilde morada.
 Avanzo un poco más, encontrándome a Lisander, mi mejor amigo y nuevo escolta. Nos conocemos de toda la vida, hemos crecido juntos en Asea, nunca se nos habría ocurrido marchar de Arcadia, y ahora míranos, ambos zarpando de nuestro hogar hacia uno de los Oráculos más importantes Grecia.
 CASANDRA: Hola Lisander.
@@ -156,6 +156,32 @@ Lisander y yo nos adentramos en la cueva. Criaturas voladoras salían despedidas
 <<jump CHAPTER_2_APOLO_DREAM_1>>
 ===
 
+title:CHAPTER_2_APOLO_DREAM_1
+position: 208,405
+----
+Abro los ojos y estoy en un lugar diferente, un espacio brillante y etéreo. Aparece Apolo en frente de mi.
+// (Si las Decisiones del Capitulo 2 son (1-1-2) o (1-2-2) = Cueva - Viajeros - Hécate (1-1-2) o Cueva - Viajeros - Mentira origen Collar (1-1-1) o Cueva - Daga - No usa don (1-2-2))
+<<if $path == "112" || $path == "122" || $path == "111">>
+    APOLO: Buenas noches Casandra, estoy aquí para recordarte lo valioso que es tu don. 
+    CASANDRA: Yo nunca quise este don, y no entiendo porque no respetas mis decisiones. Aunque no haya usado mi don, Lisander y yo seguimos vivos, así que confía en mi.
+    APOLO: La confianza es mas valiosa que el amor. Y debes entender que mi amor hacia ti es incondicional, por lo que ya confío en tu bondad y conozco tus cualidades mortales. Que no son perfectas, pues los mortales disponéis de imperfecciones como los dioses. Unas imperfecciones que nos hacen crecer. Me hayo aquí en tus sueños, declarando mi amor hacia ti, una mortal bondadosa que posee el don de la clarividencia. Un don valioso para un alma valiosa.
+// (Si las Decisiones del Capitulo 2 son (1-2-1) = Cueva - Daga - Usa don (1-2-1))
+<<elseif $path == "121">>
+    APOLO: Buenas noches Casandra, espero que empieces a valorar el don de la clarividencia. Me alivia ver que has usado este don, pero deber ser mas sensata, has tomado decisiones peligrosas.
+    CASANDRA: No me imaginaba que te preocuparas tanto por mi…
+    APOLO: Siempre.
+<<endif>>
+// ESTA FRASE ESTA REPETIDA POR QUE NO ES WORK PONERLA POR SEPARADO
+Me despierto con la luz de Apolo y con las fuerzas recargadas.
+<<set $background = "1. INT. CUEVA - DIA">>
+Veo como Lisander prepara el desayuno. Nos miramos y observamos el nuevo día soleado que ha dejado la tormenta de anoche.
+LISANDER: Buenos días Casandra. ¿Quieres comer higos?
+CASANDRA: Buenos días Lisander. ¡Claro! No tengo mucho apetito pero un higo es irrechazable. 
+LISANDER (Sonriendo): ¡Bien! Como puedes ver después de la tormenta viene la calma. Así pues, venga que la vida sigue y Delfos nos espera.
+Acabamos de desayunar, reunimos nuestros haberes y salimos de la cueva.
+<<jump CHAPTER_2_FINAL>>
+===
+
 title: CHAPTER_2_2
 position: 452,214
 ---
@@ -197,32 +223,6 @@ Una vez todos estaban dormidos, me dirigí sigilosamente hasta el morral de la p
         Vuelvo a mi lecho y caigo rendida del cansancio y alivio.
 
 <<jump CHAPTER_2_APOLO_DREAM_2>>
-===
-
-title:CHAPTER_2_APOLO_DREAM_1
-position: 208,405
-----
-Abro los ojos y estoy en un lugar diferente, un espacio brillante y etéreo. Aparece Apolo en frente de mi.
-// (Si las Decisiones del Capitulo 2 son (1-1-2) o (1-2-2) = Cueva - Viajeros - Hécate (1-1-2) o Cueva - Viajeros - Mentira origen Collar (1-1-1) o Cueva - Daga - No usa don (1-2-2))
-<<if $path == "112" || $path == "122" || $path == "111">>
-    APOLO: Buenas noches Casandra, estoy aquí para recordarte lo valioso que es tu don. 
-    CASANDRA: Yo nunca quise este don, y no entiendo porque no respetas mis decisiones. Aunque no haya usado mi don, Lisander y yo seguimos vivos, así que confía en mi.
-    APOLO: La confianza es mas valiosa que el amor. Y debes entender que mi amor hacia ti es incondicional, por lo que ya confío en tu bondad y conozco tus cualidades mortales. Que no son perfectas, pues los mortales disponéis de imperfecciones como los dioses. Unas imperfecciones que nos hacen crecer. Me hayo aquí en tus sueños, declarando mi amor hacia ti, una mortal bondadosa que posee el don de la clarividencia. Un don valioso para un alma valiosa.
-// (Si las Decisiones del Capitulo 2 son (1-2-1) = Cueva - Daga - Usa don (1-2-1))
-<<elseif $path == "121">>
-    APOLO: Buenas noches Casandra, espero que empieces a valorar el don de la clarividencia. Me alivia ver que has usado este don, pero deber ser mas sensata, has tomado decisiones peligrosas.
-    CASANDRA: No me imaginaba que te preocuparas tanto por mi…
-    APOLO: Siempre.
-<<endif>>
-// ESTA FRASE ESTA REPETIDA POR QUE NO ES WORK PONERLA POR SEPARADO
-Me despierto con la luz de Apolo y con las fuerzas recargadas.
-<<set $background = "1. INT. CUEVA - DIA">>
-Veo como Lisander prepara el desayuno. Nos miramos y observamos el nuevo día soleado que ha dejado la tormenta de anoche.
-LISANDER: Buenos días Casandra. ¿Quieres comer higos?
-CASANDRA: Buenos días Lisander. ¡Claro! No tengo mucho apetito pero un higo es irrechazable. 
-LISANDER (Sonriendo): ¡Bien! Como puedes ver después de la tormenta viene la calma. Así pues, venga que la vida sigue y Delfos nos espera.
-Acabamos de desayunar, reunimos nuestros haberes y salimos de la cueva.
-<<jump CHAPTER_2_FINAL>>
 ===
 
 title:CHAPTER_2_APOLO_DREAM_2
@@ -460,7 +460,7 @@ position: 859,593
 ----
 <<set $full_path = $full_path + $path + " Chapter - 4: ">>
 <<set $path = "">>
-<<set $background = "EXT. ALDEA DE DELFOS - DÍA">>
+<<set $background = "EXT. ALDEA DE DELFOS - DIA">>
 A la mañana siguiente, al fin, conseguimos llegar al destino de nuestra travesía, la aldea de Delfos. Como bien nos dijo Evanthe, la aldea era un lugar muy bello, lleno de naturaleza y vida, ahora solo nos faltaba conocer a las personas especiales que lo habitaban.
 Veo como Evanthe y Lisander cada vez están más unidos, quizás demasiado para los dos días que llevan conociéndose. Me mantengo algo distante, pues un sentimiento negativo recorre mi mente. Un sentimiento que me preocupa, pues estoy a punto de tomar una decisión de no retorno. Una decisión que marcará el resto de mi vida y me sumirá en una nueva etapa de mi vida. Una etapa de mi vida que llegará por buena o mala fortuna.
 APOLO (telepáticamente): Casandra, buen trabajo. Habéis superado la travesía, pero lo más importante es el porqué de este viaje. Casandra, querida mortal, has demostrado tu valía y bondad en los múltiples desafíos que han ocurrido en la travesía, y por ello eres digna de pertenecer al oráculo.
