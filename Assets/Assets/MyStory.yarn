@@ -1,5 +1,5 @@
 ﻿title: main
-position: -2,12
+position: -202,28
 ---
 // Estado del juego
 <<declare $state = 0>>
@@ -30,81 +30,80 @@ position: -2,12
 ===
 
 title:CHAPTER_1
-position: 307,-27
+position: 72,29
 ---
 <<set $full_path = "Chapter - 1: ">>
 <<set $path = "">>
-// <<set $background = "INT. CASA DE CASANDRA - DÍA">>
-// ADARA: Mi niña, es hora de despertar.
-// CASANDRA: Si, madre.
-// ADARA: Cariño, hoy es el día. Hoy será el inicio de tu nueva vida. 
-// CASANDRA: Una nueva vida que no desee tener. No quiero dejar a mi familia.
-// ADARA: Es algo que solo los dioses pueden decidir Casandra. Nosotros solo seguimos sus órdenes. Venga, prepárate.
-// Adara, la mujer más importante de mi vida, se marcha de mi habitación. Hastiada, decido salir de la cama y me dirijo al pequeño arroyo donde me purifico para emprender el viaje que me convertirá en Oráculo a los ojos de los dioses y los mortales.
-// 
-// <<set $background = "EXT. ARROYO DE ASEA - DÍA">>
-// Entro en las aguas echando un profundo suspiro. El inicio de mi viaje a Delfos, el día que más temía que llegara, ya está aquí.
-// CASANDRA: Maldigo mi suerte. ¿Por qué me sucedió esto? Nunca quise ser oráculo. Fue Apolo quien me dio mis poderes sin yo siquiera desearlos.
-// APOLO (telepáticamente): Quien no desea algo, es el más indicado para usarlo, niña.
-// CASANDRA: ¿Apolo?
-// Mi visión se oscurece y noto un cambio de entorno. Parpadeo un par de veces y delante de mi está la brillante figura de Apolo.
-// APOLO: Sabes perfectamente porque te elegí para ser la próxima oráculo, Casandra.
-// CASANDRA: ¿Solo porque te cuidé y te di de comer? Me sorprende.
-// APOLO: Quería saber si eras de fiar, si eras merecedora de mis poderes. Llevaba mucho tiempo observándote Casandra. Tienes un gran corazón y estás dispuesta a ayudar a la gente. Estaba y estoy convencido de que puedes ayudar a mucha gente con mi ayuda, con mis dones.
-// CASANDRA: ¿Predecir el futuro de la gente es ayudarlos? ¡Es volverlos paranoicos! Es hacer que se destruyan a si mismos, pensando que pueden huir de su destino cuando jamás podrán hacerlo.
-// APOLO: En eso te equivocas, Casandra. El futuro se puede cambiar, es algo que aun no has visto. Pero lo experimentarás pronto.
-// Apolo desaparece, mi visión vuelve a ver las aguas del arroyo.
-// CASANDRA: ¿Qué quieres decir con eso? ¡Oye! 
-// … Me he quedado sola.
-// 
-// <<set $background = "EXT. CASA DE CASANDRA - DÍA">>
-// Ya aseada y vestida, salgo de mi humilde morada.
-// Avanzo un poco más, encontrándome a Lisander, mi mejor amigo y nuevo escolta. Nos conocemos de toda la vida, hemos crecido juntos en Asea, nunca se nos habría ocurrido marchar de Arcadia, y ahora míranos, ambos zarpando de nuestro hogar hacia uno de los Oráculos más importantes Grecia.
-// CASANDRA: Hola Lisander.
-// LISANDER: ¡Casandra! Hoy es el gran día. ¿Cómo te sientes?
-//     -> Digo la verdad “Pues verás estoy algo angustiada con esta nueva vida que me depara.”
-//         <<set $path = $path + "1">>
-//         LISANDER: Es normal, se que es una vida que no te esperabas, pero el don de la clarividencia conlleva una gran responsabilidad. Además estaremos juntos en esta travesía y pase lo que pase siempre podrás contar conmigo.
-//     -> Miento a Lisander para que no sufra por mi “Muy bien, ¡lista para partir!”
-//         <<set $path = $path + "2">>
-//         LISANDER: Nunca se te ha dado bien mentir, esa mueca siempre te delata. Se que es una vida que no te esperabas, pero el don de la clarividencia conlleva una gran responsabilidad. Además estaremos juntos en esta travesía y pase lo que pase siempre podrás contar conmigo.
-// CASANDRA: Ya lo se.. Pero no será lo mismo.
-// LISANDER: Vivir es un cambio continuo. ¡Al igual que tus ojos! Ahora son dorados cuando antes eran marrón roble. Ambos son diferentes y bellos, ya que da igual de que color sean, mientras sean los tuyos.
-// Mis mejillas se ruborizan y Lisander se torna rojo. Indecisos de que decir o hacer, rompo el silencio.
-// CASANDRA: Gracias Lisander.
-// Por suerte, aparecen mis padres con los víveres, una capa y una daga para la travesía de 3 días que nos espera.
-// CLAUS (Padre de Casandra): Hija aquí tienes todos los víveres que hemos podido obtener gracias a los dioses. Id con cuidado y cuidad a los prójimos tanto como Apolo te bendijo a ti Casandra.
-// CASANDRA: Gracias padre. Siempre estaréis en mi y nunca podre agradeceros todo cuanto me habéis ofrecido en esta vida.
-// Mis padres se abalanzan hacia mi. Me abrazan y durante unos segundos intento memorizar este momento. No sabré si volveré a verlos otra vez y éste será el ultimo recuerdo que tendré de ellos.
-// ADARA (Madre de Casandra): Querida hija mía, estamos muy orgullosos de ti. Una gran vida te espera en Delfos, partid antes no se haga más tardío el día.
-// Lisander y yo, iniciamos la marcha. Dejamos atrás las colinas de nuestra queridaAsea.
-// 
-// <<set $background = "EXT. PRADERA DE ARCADIA - TARDE">>
-// Mientras las últimas luces de Apolo nos guian por las praderas. Vemos a una mujer que se acerca a nosotros.
-// CLÍO: Buenas tardes, me llamo Clío de Nestane. He oído voces sobre la joven muchacha de Asea que obtuvo el don de la clarividencia. Si mi intuición no falla se trata de ti, ¿verdad muchacha?
-// CASANDRA: Así es, las voces corren como el viento de Levante.
-// CLÍO: Tengo una ofrenda para ti, este collar, es una reliquia de la diosa Hécate, os guiará en vuestro camino. Buena fortuna en la travesía.
-// CASANDRA: Gracias Clío, con Hécate a nuestro lado estaremos mucho más a salvo.
-//
+<<set $background = "INT. CASA DE CASANDRA - DÍA">>
+ADARA: Mi niña, es hora de despertar.
+CASANDRA: Si, madre.
+ADARA: Cariño, hoy es el día. Hoy será el inicio de tu nueva vida. 
+CASANDRA: Una nueva vida que no desee tener. No quiero dejar a mi familia.
+ADARA: Es algo que solo los dioses pueden decidir Casandra. Nosotros solo seguimos sus órdenes. Venga, prepárate.
+Adara, la mujer más importante de mi vida, se marcha de mi habitación. Hastiada, decido salir de la cama y me dirijo al pequeño arroyo donde me purifico para emprender el viaje que me convertirá en Oráculo a los ojos de los dioses y los mortales.
+
+<<set $background = "EXT. ARROYO DE ASEA - DÍA">>
+Entro en las aguas echando un profundo suspiro. El inicio de mi viaje a Delfos, el día que más temía que llegara, ya está aquí.
+CASANDRA: Maldigo mi suerte. ¿Por qué me sucedió esto? Nunca quise ser oráculo. Fue Apolo quien me dio mis poderes sin yo siquiera desearlos.
+APOLO (telepáticamente): Quien no desea algo, es el más indicado para usarlo, niña.
+CASANDRA: ¿Apolo?
+Mi visión se oscurece y noto un cambio de entorno. Parpadeo un par de veces y delante de mi está la brillante figura de Apolo.
+APOLO: Sabes perfectamente porque te elegí para ser la próxima oráculo, Casandra.
+CASANDRA: ¿Solo porque te cuidé y te di de comer? Me sorprende.
+APOLO: Quería saber si eras de fiar, si eras merecedora de mis poderes. Llevaba mucho tiempo observándote Casandra. Tienes un gran corazón y estás dispuesta a ayudar a la gente. Estaba y estoy convencido de que puedes ayudar a mucha gente con mi ayuda, con mis dones.
+CASANDRA: ¿Predecir el futuro de la gente es ayudarlos? ¡Es volverlos paranoicos! Es hacer que se destruyan a si mismos, pensando que pueden huir de su destino cuando jamás podrán hacerlo.
+APOLO: En eso te equivocas, Casandra. El futuro se puede cambiar, es algo que aun no has visto. Pero lo experimentarás pronto.
+Apolo desaparece, mi visión vuelve a ver las aguas del arroyo.
+CASANDRA: ¿Qué quieres decir con eso? ¡Oye! 
+… Me he quedado sola.
+
+<<set $background = "EXT. CASA DE CASANDRA - DÍA">>
+Ya aseada y vestida, salgo de mi humilde morada.
+Avanzo un poco más, encontrándome a Lisander, mi mejor amigo y nuevo escolta. Nos conocemos de toda la vida, hemos crecido juntos en Asea, nunca se nos habría ocurrido marchar de Arcadia, y ahora míranos, ambos zarpando de nuestro hogar hacia uno de los Oráculos más importantes Grecia.
+CASANDRA: Hola Lisander.
+LISANDER: ¡Casandra! Hoy es el gran día. ¿Cómo te sientes?
+    -> Digo la verdad “Pues verás estoy algo angustiada con esta nueva vida que me depara.”
+        <<set $path = $path + "1">>
+        LISANDER: Es normal, se que es una vida que no te esperabas, pero el don de la clarividencia conlleva una gran responsabilidad. Además estaremos juntos en esta travesía y pase lo que pase siempre podrás contar conmigo.
+    -> Miento a Lisander para que no sufra por mi “Muy bien, ¡lista para partir!”
+        <<set $path = $path + "2">>
+        LISANDER: Nunca se te ha dado bien mentir, esa mueca siempre te delata. Se que es una vida que no te esperabas, pero el don de la clarividencia conlleva una gran responsabilidad. Además estaremos juntos en esta travesía y pase lo que pase siempre podrás contar conmigo.
+CASANDRA: Ya lo se.. Pero no será lo mismo.
+LISANDER: Vivir es un cambio continuo. ¡Al igual que tus ojos! Ahora son dorados cuando antes eran marrón roble. Ambos son diferentes y bellos, ya que da igual de que color sean, mientras sean los tuyos.
+Mis mejillas se ruborizan y Lisander se torna rojo. Indecisos de que decir o hacer, rompo el silencio.
+CASANDRA: Gracias Lisander.
+Por suerte, aparecen mis padres con los víveres, una capa y una daga para la travesía de 3 días que nos espera.
+CLAUS (Padre de Casandra): Hija aquí tienes todos los víveres que hemos podido obtener gracias a los dioses. Id con cuidado y cuidad a los prójimos tanto como Apolo te bendijo a ti Casandra.
+CASANDRA: Gracias padre. Siempre estaréis en mi y nunca podre agradeceros todo cuanto me habéis ofrecido en esta vida.
+Mis padres se abalanzan hacia mi. Me abrazan y durante unos segundos intento memorizar este momento. No sabré si volveré a verlos otra vez y éste será el ultimo recuerdo que tendré de ellos.
+ADARA (Madre de Casandra): Querida hija mía, estamos muy orgullosos de ti. Una gran vida te espera en Delfos, partid antes no se haga más tardío el día.
+Lisander y yo, iniciamos la marcha. Dejamos atrás las colinas de nuestra queridaAsea.
+
+<<set $background = "EXT. PRADERA DE ARCADIA - TARDE">>
+Mientras las últimas luces de Apolo nos guian por las praderas. Vemos a una mujer que se acerca a nosotros.
+CLÍO: Buenas tardes, me llamo Clío de Nestane. He oído voces sobre la joven muchacha de Asea que obtuvo el don de la clarividencia. Si mi intuición no falla se trata de ti, ¿verdad muchacha?
+CASANDRA: Así es, las voces corren como el viento de Levante.
+CLÍO: Tengo una ofrenda para ti, este collar, es una reliquia de la diosa Hécate, os guiará en vuestro camino. Buena fortuna en la travesía.
+CASANDRA: Gracias Clío, con Hécate a nuestro lado estaremos mucho más a salvo.
 <<jump CHAPTER_2>>
 ===
 
 title:CHAPTER_2
-position: 323,228
+position: 392,28
 ---
 <<set $full_path = $full_path + $path + " Chapter - 2: ">>
 <<set $path = "">>
 <<set $background = "EXT. ACANTILADOS DE CORINTIA - ANOCHECER">>
-// Continuamos nuestra travesía, llegamos a los acantilados de Corintia, el estrecho que conecta nuestra península con el resto de Grecia. Admiramos la bella naturaleza que nos rodea, nunca antes habíamos visto el mar. Con el frescor de la brisa marina observamos como Apolo desaparece por el horizonte marino. Proseguimos la marcha, quiero romper el silencio entre nosotros, Lisander parece cansado y pensativo.
-// LISANDER: Casandra siempre has sido una persona de buen corazón.
-// CASANDRA: ¡Eso es mentira!
-// LISANDER: Recuerdo un día, cuando éramos niños, quise subirme a la vaca de tu padre que vigilabas. Tu me advertiste de que no lo hiciera y no te hice caso. La vaca se encabritó y me sacudió una coz que me lanzó al suelo. Acudiste en mi socorro prontamente me viste encima de la vaca, me llevaste hasta tu hogar y me sanaste el brazo roto con un cabestrillo de…
-// CASANDRA: …de la rama del pequeño roble. Me sorprende que aún recuerdes eso…
-// LISANDER (riéndose): Anda ya! si solo fuera esa anécdota (se ríe). Te puedo contar decenas de historias en las que has demostrado tu bondad Casandra.
-// CASANDRA (avergonzada): Venga ya! Deja de alabarme, aún no pertenezco al oráculo, somos iguales, individuos de una misma tierra.
-// La brisa se torna en un viento huracanado que sacude los arboles. Las hojas y el salitre nos impide avanzar de forma segura. Algunos arboles se desprenden de la tierra, Lisander escucha un árbol abalanzarse hacia mi y me protege de un posible daño.
-// CASANDRA: Buenos reflejos Lisander. La clarividencia no fue muy útil esta vez.
-// LISANDER: No enfademos a los dioses, Poseidón demuestra su rabia y nos avisa de los peligros que alberga la noche. Deberíamos buscar un lugar seguro donde descansar.
+Continuamos nuestra travesía, llegamos a los acantilados de Corintia, el estrecho que conecta nuestra península con el resto de Grecia. Admiramos la bella naturaleza que nos rodea, nunca antes habíamos visto el mar. Con el frescor de la brisa marina observamos como Apolo desaparece por el horizonte marino. Proseguimos la marcha, quiero romper el silencio entre nosotros, Lisander parece cansado y pensativo.
+LISANDER: Casandra siempre has sido una persona de buen corazón.
+CASANDRA: ¡Eso es mentira!
+LISANDER: Recuerdo un día, cuando éramos niños, quise subirme a la vaca de tu padre que vigilabas. Tu me advertiste de que no lo hiciera y no te hice caso. La vaca se encabritó y me sacudió una coz que me lanzó al suelo. Acudiste en mi socorro prontamente me viste encima de la vaca, me llevaste hasta tu hogar y me sanaste el brazo roto con un cabestrillo de…
+CASANDRA: …de la rama del pequeño roble. Me sorprende que aún recuerdes eso…
+LISANDER (riéndose): Anda ya! si solo fuera esa anécdota (se ríe). Te puedo contar decenas de historias en las que has demostrado tu bondad Casandra.
+CASANDRA (avergonzada): Venga ya! Deja de alabarme, aún no pertenezco al oráculo, somos iguales, individuos de una misma tierra.
+La brisa se torna en un viento huracanado que sacude los arboles. Las hojas y el salitre nos impide avanzar de forma segura. Algunos arboles se desprenden de la tierra, Lisander escucha un árbol abalanzarse hacia mi y me protege de un posible daño.
+CASANDRA: Buenos reflejos Lisander. La clarividencia no fue muy útil esta vez.
+LISANDER: No enfademos a los dioses, Poseidón demuestra su rabia y nos avisa de los peligros que alberga la noche. Deberíamos buscar un lugar seguro donde descansar.
 CASANDRA: Tienes razón…
     -> Eso de allí parece una cueva. Ven conmigo.
         <<set $path = $path + "1">>
@@ -118,7 +117,7 @@ CASANDRA: Tienes razón…
 ===
 
 title:CHAPTER_2_1
-position: 37,409
+position: 207,219
 ---
 <<set $background = "1. INT. CUEVA - NOCHE">>
 Lisander y yo nos adentramos en la cueva. Criaturas voladoras salían despedidas al vernos encender una antorcha. Avanzamos hacia el interior de la cueva y vemos una luz acercarse a nosotros. Se trataban de dos hombres, dos individuos que no parecían ir en son de paz.
@@ -154,11 +153,11 @@ Lisander y yo nos adentramos en la cueva. Criaturas voladoras salían despedidas
                 CASANDRA (llorosa): Lisander, lo siento muchísimo. El miedo se apoderó de mi mente y no supe como actuar.
                 Lisander se acercó hacia mi y me abrazó intensamente. Nos sentamos en el suelo y le canté la nana de mi madre. No paramos de llorar hasta ver la luz de Apolo iluminar la salida de la cueva. 
 
-<<jump CHAPTER_2_APOLO_DREAM>>
+<<jump CHAPTER_2_APOLO_DREAM_1>>
 ===
 
 title: CHAPTER_2_2
-position: 633,344
+position: 452,214
 ---
 <<set $background = "2. INT. REFUGIO DESCONOCIDO - NOCHE">>
 Nos acercamos hacia las luces que a medida que nos aproximamos se tornan más intensas y cálidas. Las luces provienen de un refugio en buen estado. Lisander decide llamar a la puerta y tras unos instantes, nos abre la puerta una mujer.
@@ -197,11 +196,11 @@ Una vez todos estaban dormidos, me dirigí sigilosamente hasta el morral de la p
         CASANDRA :De acuerdo.
         Vuelvo a mi lecho y caigo rendida del cansancio y alivio.
 
-<<jump CHAPTER_2_APOLO_DREAM>>
+<<jump CHAPTER_2_APOLO_DREAM_2>>
 ===
 
-title:CHAPTER_2_APOLO_DREAM
-position: 291,632
+title:CHAPTER_2_APOLO_DREAM_1
+position: 208,405
 ----
 Abro los ojos y estoy en un lugar diferente, un espacio brillante y etéreo. Aparece Apolo en frente de mi.
 // (Si las Decisiones del Capitulo 2 son (1-1-2) o (1-2-2) = Cueva - Viajeros - Hécate (1-1-2) o Cueva - Viajeros - Mentira origen Collar (1-1-1) o Cueva - Daga - No usa don (1-2-2))
@@ -209,19 +208,23 @@ Abro los ojos y estoy en un lugar diferente, un espacio brillante y etéreo. Apa
     APOLO: Buenas noches Casandra, estoy aquí para recordarte lo valioso que es tu don. 
     CASANDRA: Yo nunca quise este don, y no entiendo porque no respetas mis decisiones. Aunque no haya usado mi don, Lisander y yo seguimos vivos, así que confía en mi.
     APOLO: La confianza es mas valiosa que el amor. Y debes entender que mi amor hacia ti es incondicional, por lo que ya confío en tu bondad y conozco tus cualidades mortales. Que no son perfectas, pues los mortales disponéis de imperfecciones como los dioses. Unas imperfecciones que nos hacen crecer. Me hayo aquí en tus sueños, declarando mi amor hacia ti, una mortal bondadosa que posee el don de la clarividencia. Un don valioso para un alma valiosa.
-
 // (Si las Decisiones del Capitulo 2 son (1-2-1) = Cueva - Daga - Usa don (1-2-1))
 <<elseif $path == "121">>
     APOLO: Buenas noches Casandra, espero que empieces a valorar el don de la clarividencia. Me alivia ver que has usado este don, pero deber ser mas sensata, has tomado decisiones peligrosas.
     CASANDRA: No me imaginaba que te preocuparas tanto por mi…
     APOLO: Siempre.
+<<endif>>
+<<jump CHAPTER_2_CONTINUATION_1>>
+===
 
+title:CHAPTER_2_APOLO_DREAM_2
+position: 450,400
+---
 // (Si las Decisiones del Capitulo 2 son (2-1-1) o (2-2-1) = Refugio- Don o palabras- Daga)
-<<elseif $path == "211" || $path == "221">>
+<<if $path == "211" || $path == "221">>
     APOLO: Buenas noches Casandra, estoy preocupado por ti. Donar tu daga al prójimo, tu único elemento de protección, es arriesgado.
     CASANDRA: Tranquilo, mi bienestar no importa si consigo mejorar la vida del prójimo.
     APOLO (sonriendo): Me hace feliz ver que acerté eligiéndote a ti Casandra. Ahora deberás confiar plenamente en Lisander pues debéis protegeros el uno al otro.
-
 // (Si las Decisiones del Capitulo 2 son (2-1-2) o (2-2-2) = Refugio - Don o palabras - Manzana)
 <<elseif $path == "212" || $path == "222">>
     CASANDRA: Hola Apolo, tengo una duda, ¿porqué debía dividir la manzana para las tres diosas?
@@ -232,40 +235,46 @@ Abro los ojos y estoy en un lugar diferente, un espacio brillante y etéreo. Apa
     APOLO (sonriendo): Las cosas no son tan simples Casandra, el orgullo de los dioses puede ser peor que el de los mortales. Debido a esta disputa, se originó la guerra de Troya, un conflicto que enfrentó a la polis con el resto de Grecia. Los dioses hacen cosas de las que nos arrepentimos.
     CASANDRA: ¿Tu de que te arrepientes haber hecho?
     APOLO: … Mejor descansa Casandra.
-
 <<endif>>
-
-<<jump CHAPTER_2_CONTINUATION>>
+<<jump CHAPTER_2_CONTINUATION_2>>
 ===
 
-title:CHAPTER_2_CONTINUATION
-position: 131,859
+title:CHAPTER_2_CONTINUATION_1
+position: 207,582
 ----
 Me despierto con la luz de Apolo y con las fuerzas recargadas.
-<<if $path == "112" || $path == "122" || $path == "111" || $path == "121">>
-    <<set $background = "1. INT. CUEVA - DIA">>
-    Veo como Lisander prepara el desayuno. Nos miramos y observamos el nuevo día soleado que ha dejado la tormenta de anoche.
-    LISANDER: Buenos días Casandra. ¿Quieres comer higos?
-    CASANDRA: Buenos días Lisander. ¡Claro! No tengo mucho apetito pero un higo es irrechazable. 
-    LISANDER (Sonriendo): ¡Bien! Como puedes ver después de la tormenta viene la calma. Así pues, venga que la vida sigue y Delfos nos espera.
-    Acabamos de desayunar, reunimos nuestros haberes y salimos de la cueva.
+<<set $background = "1. INT. CUEVA - DIA">>
+Veo como Lisander prepara el desayuno. Nos miramos y observamos el nuevo día soleado que ha dejado la tormenta de anoche.
+LISANDER: Buenos días Casandra. ¿Quieres comer higos?
+CASANDRA: Buenos días Lisander. ¡Claro! No tengo mucho apetito pero un higo es irrechazable. 
+LISANDER (Sonriendo): ¡Bien! Como puedes ver después de la tormenta viene la calma. Así pues, venga que la vida sigue y Delfos nos espera.
+Acabamos de desayunar, reunimos nuestros haberes y salimos de la cueva.
+<<jump CHAPTER_2_FINAL>>
+===
 
-<<elseif $path == "211" || $path == "221" || $path == "212" || $path == "222">>
-    <<set $background = "2. INT. REFUGIO DESCONOCIDO - DIA">>
-    Lisander y yo vemos a la pareja comiendo y hablando animadamente.
-    LISANDER: ¿Va todo bien?
-    MARIDO REFUGIO (entusiasmado): ¡Hemos sido bendecidos con un regalo de los dioses! ¡¡Oro!!
-    Lisander se queda perplejo mirando el oro. Después me mira con una cara de felicidad, creo que sabe que Apolo tuvo algo que ver.
-    // Si Casandra dejo una manzana (Si las Decisiones del Capitulo 2 son (2-1-2) o (2-2-2) = Refugio - Don o palabras - Manzana)—
-    <<if $path == "212" || $path == "222">>
-        Después de desayunar higos con Lisander y antes de partir me acerco a la pareja.
-        CASANDRA: Antes de marchar, debo deciros que las piezas de oro que habéis recibido son ofrendas que debéis entregar a los templos de Atenea, Hera y Afrodita. Según Apolo, estas ofrendas darán fin a la confrontación entre las diosas y evitará que se vuelvan a provocar guerras.
-        MUJER REFUGIO: Nunca habíamos tenido una misión tan importante. Gracias Casandra, haremos lo que nos pides. 
-        CASANDRA: Mucha suerte y próspera vida en Micenas.
-        Poco más tarde, salimos del refugio y observamos el nuevo día soleado que ha dejado la tormenta de anoche.
-    <<endif>>
+title:CHAPTER_2_CONTINUATION_2
+position: 448,591
+----
+Me despierto con la luz de Apolo y con las fuerzas recargadas.
+<<set $background = "2. INT. REFUGIO DESCONOCIDO - DIA">>
+Lisander y yo vemos a la pareja comiendo y hablando animadamente.
+LISANDER: ¿Va todo bien?
+MARIDO REFUGIO (entusiasmado): ¡Hemos sido bendecidos con un regalo de los dioses! ¡¡Oro!!
+Lisander se queda perplejo mirando el oro. Después me mira con una cara de felicidad, creo que sabe que Apolo tuvo algo que ver.
+// Si Casandra dejo una manzana (Si las Decisiones del Capitulo 2 son (2-1-2) o (2-2-2) = Refugio - Don o palabras - Manzana)—
+<<if $path == "212" || $path == "222">>
+    Después de desayunar higos con Lisander y antes de partir me acerco a la pareja.
+    CASANDRA: Antes de marchar, debo deciros que las piezas de oro que habéis recibido son ofrendas que debéis entregar a los templos de Atenea, Hera y Afrodita. Según Apolo, estas ofrendas darán fin a la confrontación entre las diosas y evitará que se vuelvan a provocar guerras.
+    MUJER REFUGIO: Nunca habíamos tenido una misión tan importante. Gracias Casandra, haremos lo que nos pides. 
+    CASANDRA: Mucha suerte y próspera vida en Micenas.
+    Poco más tarde, salimos del refugio y observamos el nuevo día soleado que ha dejado la tormenta de anoche.
 <<endif>>
+<<jump CHAPTER_2_FINAL>>
+===
 
+title:CHAPTER_2_FINAL
+position: 327,818
+---
 <<set $background = "EXT. CORINTIA - DIA">>
 Me pregunto como retomar la marcha.
 APOLO (telepáticamente): Buenos días Casandra.
@@ -311,7 +320,7 @@ Evanthe se unió a nosotros, fuimos a por el arma y nos despedimos de Cirilo y d
 ===
 
 title:CHAPTER_3
-position: 598,777
+position: 624,818
 ----
 <<set $full_path = $full_path + $path + " Chapter - 3: ">>
 <<set $path = "">>
@@ -457,7 +466,7 @@ Continuamos con nuestro camino..
 ===
 
 title:CHAPTER_4
-position: 524,1080
+position: 901,817
 ----
 <<set $full_path = $full_path + $path + " Chapter - 4: ">>
 <<set $path = "">>
@@ -528,7 +537,7 @@ Salgo del lecho y me dirijo hacia el templo de la ceremonia.
 ===
 
 title:CHAPTER_5
-position: 155,1203
+position: 901,1013
 ----
 <<set $full_path = $full_path + $path + " Chapter - 5: ">>
 <<set $path = "">>
@@ -537,21 +546,35 @@ Ante las gigantescas puertas del templo, pienso en todas las vivencias que he te
 CASANDRA:  Al principio no deseaba el don de la clarividencia y lo veía como una carga, con el tiempo he ido entendiendo mi destino y ahora me siento feliz de haber podido acercarme a Apolo.
 En aquel instante, Apolo se materializa delante de mí. 
 APOLO: Y bien, ¿Cuál es tu decisión Casandra?
-CASANDRA: 
     -> Ser oráculo de Delfos.
-        Apolo sonríe y me abraza con fuerza.
-        APOLO: Agradezco que quieras seguir con el destino que te confié. A pesar de que mis motivos iniciales fueran egoístas. 
-        Apolo se aparta de mí y me confiere el aspecto de una oráculo: una túnica blanca con cinturón, joyas de oro y por último, una corona de laurel, símbolo de Apolo.
-        Bajo del altar y los invitados se dirigen hacia mí alegremente. Calíope me abraza con alegría, Clío y Evanthe me felicitan. Lisander me abraza fuertemente y me confiesa que vivirá en la aldea de Delfos con su comprometida, Evanthe. Me invade la felicidad y les deseo un buen futuro y un largo romance. 
-        Miro al cielo, viendo como el sol brilla más de lo normal y escucho las promesas de Apolo sobre un futuro mejor, un futuro en el que Apolo y yo estamos unidos.
-        FIN
+        <<set $path = $path + "1">>
+        <<jump CHAPTER_5_END_1>>
     ->Rechazar el don de Apolo. 
-        Apolo me sonríe apenado, pero también comprensivo. Usa su magia para quitarme el don, mis ojos vuelven a ser marrones debido a la falta de magia. Apolo y yo nos miramos sonriendo.
-        APOLO: Casandra, estoy seguro de que tendrás una buena vida, te cuidaré desde los cielos. 
-        Apolo desaparece y bajo del altar. Los invitados se dirigen hacia mí. Calíope parece algo triste, pero entiende y acepta mi decisión. Continua su búsqueda de un nuevo oráculo y Phineas acude al instante intentando llamar la atención de la sacerdotisa. Calíope le intimida con sus dones y Phineas acaba marchando achantado.
-        Agradezco a Clío su ayuda para tomar mi decisión. Ella me dice que siempre había sido una alternativa posible y que solo me ofreció unos conocimientos para escuchar a mi corazón. Abrazo a Clío, marcando en inicio de una bonita amistad.
-        Lisander se aparta de Evanthe y se dirige a mí con una sonrisa en su rostro. Después de abrazarme intensamente, declara el amor que siente por su vecina de Asea, una joven muchacha llamada Casandra. 
-        Evanthe se entristece de no ser correspondida por Lisander y al día siguiente inicia el viaje a Oriente que siempre había querido realizar. 
-        Lisander y yo nos miramos llenos de felicidad e iniciamos una nueva travesía de felicidad y alegría con un beso de amor verdadero.
-        FIN
+        <<set $path = $path + "2">>
+        <<jump CHAPTER_5_END_2>>
+
+===
+
+title:CHAPTER_5_END_1
+position: 988,1198
+---
+Apolo sonríe y me abraza con fuerza.
+APOLO: Agradezco que quieras seguir con el destino que te confié. A pesar de que mis motivos iniciales fueran egoístas. 
+Apolo se aparta de mí y me confiere el aspecto de una oráculo: una túnica blanca con cinturón, joyas de oro y por último, una corona de laurel, símbolo de Apolo.
+Bajo del altar y los invitados se dirigen hacia mí alegremente. Calíope me abraza con alegría, Clío y Evanthe me felicitan. Lisander me abraza fuertemente y me confiesa que vivirá en la aldea de Delfos con su comprometida, Evanthe. Me invade la felicidad y les deseo un buen futuro y un largo romance. 
+Miro al cielo, viendo como el sol brilla más de lo normal y escucho las promesas de Apolo sobre un futuro mejor, un futuro en el que Apolo y yo estamos unidos.
+FIN
+===
+
+title:CHAPTER_5_END_2
+position: 704,1199
+---
+Apolo me sonríe apenado, pero también comprensivo. Usa su magia para quitarme el don, mis ojos vuelven a ser marrones debido a la falta de magia. Apolo y yo nos miramos sonriendo.
+APOLO: Casandra, estoy seguro de que tendrás una buena vida, te cuidaré desde los cielos. 
+Apolo desaparece y bajo del altar. Los invitados se dirigen hacia mí. Calíope parece algo triste, pero entiende y acepta mi decisión. Continua su búsqueda de un nuevo oráculo y Phineas acude al instante intentando llamar la atención de la sacerdotisa. Calíope le intimida con sus dones y Phineas acaba marchando achantado.
+Agradezco a Clío su ayuda para tomar mi decisión. Ella me dice que siempre había sido una alternativa posible y que solo me ofreció unos conocimientos para escuchar a mi corazón. Abrazo a Clío, marcando en inicio de una bonita amistad.
+Lisander se aparta de Evanthe y se dirige a mí con una sonrisa en su rostro. Después de abrazarme intensamente, declara el amor que siente por su vecina de Asea, una joven muchacha llamada Casandra. 
+Evanthe se entristece de no ser correspondida por Lisander y al día siguiente inicia el viaje a Oriente que siempre había querido realizar. 
+Lisander y yo nos miramos llenos de felicidad e iniciamos una nueva travesía de felicidad y alegría con un beso de amor verdadero.
+FIN
 ===
