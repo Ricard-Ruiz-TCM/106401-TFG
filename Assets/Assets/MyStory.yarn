@@ -1,5 +1,5 @@
 ﻿title: main
-position: -149,33
+position: -2,12
 ---
 // Estado del juego
 <<declare $state = 0>>
@@ -15,30 +15,140 @@ position: -149,33
 // Música que sonará de fondo, solo 1 a la vez
 <<declare $audio_music = "">>
 
+// Fondo de pantalla
+<<declare $background = "">>
+
 // In-Game variables to use 
-<<jump Monologo>>
+<<jump CHAPTER_1>>
 ===
 
-title:Monologo
-position: 108,33
+title:CHAPTER_1
+position: 307,-27
 ---
-<<set $state = 1>>
-Hoy es el día, qué nervios… después de haber ayudado a Apolo como vínculo entre los dioses y los mortales, ahora padezco de esta maldita condición. Sé que cualquiera lo vería como un don. Pero soy demasiado joven para dicha responsabilidad. Me asusta desperdiciar la juventud por el hecho de tener que usar mi don de la clarividencia en servicio al pueblo. Está claro que sería un pilar fácil para cerciorar mi prestigio ante Zeus, pero todo ha sido tan rápido que tendré que abandonar mis aspiraciones, mi familia, y el amor… 
-¿Que debería priorizar?
--> Decisión 1
--> Decisión 2
-Desconocido: “…erta”
-<<set $state = 2>>
-Casandra: *¿Una voz?*
-Desconocido: “Despierta…”
-Casandra: ¡!
-(Casandra abre los ojos)
-Casandra: *¿Un sueño? ¿Qué era esa voz?*
-Calíope: Mi niña, es hora de despertar.
-<<set $state = 3>>
-Casandra: Si, maestra.
-Calíope: Hoy es el día, Casandra. Hoy tomarás mi relevo y te convertirás en Oráculo de Delfos.
-Casandra: No es algo que yo desee ser.
-Calíope: Es algo que solo los dioses pueden decidir Casandra. Nosotros solo seguimos sus órdenes. Venga, prepárate. Nos veremos en el templo.
-*Veo como Clío, la mujer que me trató como una hija después de dejar mi hogar, se marcha de mi habitación. Hastiada, decido salir de la cama y me dirijo a las calientes aguas de mis termas personales para purificarme para la ceremonia que me convertirá en Oráculo a los ojos de los dioses y los mortales.*
+<<set $background = "INT. CASA DE CASANDRA - DÍA">>
+APOLO: … erta
+CASANDRA (OFF): *¿Una voz?*
+APOLO: Despierta…
+Abro los ojos, no recuerdo como me dormí pero por suerte no tuve ningún mal sueño…
+CASANDRA (OFF):*¿Un sueño? ¿Qué era esa voz?*
+ADARA: Mi niña, es hora de despertar.
+CASANDRA: Si, madre.
+ADARA: Cariño, hoy es el día. Hoy será el inicio de tu nueva vida. 
+CASANDRA: Una nueva vida que no desee tener. No quiero dejar a mi familia.
+ADARA: Es algo que solo los dioses pueden decidir Casandra. Nosotros solo seguimos sus órdenes. Venga, prepárate.
+Adara, la mujer más importante de mi vida, se marcha de mi habitación. Hastiada, decido salir de la cama y me dirijo al pequeño arroyo donde me purifico para emprender el viaje que me convertirá en Oráculo a los ojos de los dioses y los mortales.
+
+<<set $background = "EXT. ARROYO DE ASEA - DÍA">>
+Entro en las aguas echando un profundo suspiro. El inicio de mi viaje a Delfos, el día que más temía que llegara, ya está aquí.
+CASANDRA: Maldigo mi suerte. ¿Por qué me sucedió esto? Nunca quise ser oráculo. Fue Apolo quien me dio mis poderes sin yo siquiera desearlos.
+APOLO: Quien no desea algo, es el más indicado para usarlo, niña.
+CASANDRA: ¿Apolo?
+Mi visión se oscurece y noto un cambio de entorno. Parpadeo un par de veces y delante de mi está la brillante figura de Apolo.
+APOLO: Sabes perfectamente porque te elegí para ser la próxima oráculo, Casandra.
+CASANDRA: ¿Solo porque te cuidé y te di de comer? Me sorprende.
+APOLO: Quería saber si eras de fiar, si eras merecedora de mis poderes. Llevaba mucho tiempo observándote Casandra. Tienes un gran corazón y estás dispuesta a ayudar a la gente. Estaba y estoy convencido de que puedes ayudar a mucha gente con mi ayuda, con mis dones.
+CASANDRA: ¿Predecir el futuro de la gente es ayudarlos? ¡Es volverlos paranoicos! Es hacer que se destruyan a si mismos, pensando que pueden huir de su destino cuando jamás podrán hacerlo.
+APOLO: En eso te equivocas, Casandra. El futuro se puede cambiar, es algo que aun no has visto. Pero lo experimentarás pronto.
+Apolo desaparece, mi visión vuelve a ver las aguas del arroyo.
+CASANDRA: ¿Qué quieres decir con eso? ¡Oye! … Me he quedado sola.
+
+<<set $background = "EXT. CASA DE CASANDRA - DÍA">>
+Ya aseada y vestida, salgo de mi humilde morada.
+Avanzo un poco más, encontrándome a Lisander, mi mejor amigo y nuevo escolta. Nos conocemos de toda la vida, hemos crecido juntos en Asea, nunca se nos habría ocurrido marchar de Arcadia, y ahora míranos, ambos zarpando de nuestro hogar hacia uno de los Oráculos más importantes Grecia.
+CASANDRA: Hola Lisander.
+LISANDER: ¡Casandra! Hoy es el gran día. ¿Cómo te sientes?
+CASANDRA:
+    -> Digo la verdad “Pues verás estoy algo angustiada con esta nueva vida que me depara.”
+        LISANDER: Es normal, se que es una vida que no te esperabas, pero el don de la clarividencia conlleva una gran responsabilidad. Además estaremos juntos en esta travesía y pase lo que pase siempre podrás contar conmigo.
+
+    -> Miento a Lisander para que no sufra por mi “Muy bien, ¡lista para partir!”
+        LISANDER: Nunca se te ha dado bien mentir, esa mueca siempre te delata. Se que es una vida que no te esperabas, pero el don de la clarividencia conlleva una gran responsabilidad. Además estaremos juntos en esta travesía y pase lo que pase siempre podrás contar conmigo.
+
+CASANDRA: Ya lo se.. Pero no será lo mismo.
+LISANDER: Vivir es un cambio continuo. ¡Al igual que tus ojos! Ahora son dorados cuando antes eran marrón roble. Ambos son diferentes y bellos, ya que da igual de que color sean, mientras sean los tuyos.
+Mis mejillas se ruborizan y Lisander se torna rojo. Indecisos de que decir o hacer, rompo el silencio.
+CASANDRA: Gracias Lisander.
+Por suerte, aparecen mis padres con los víveres, una capa y una daga para la travesía de 3 días que nos espera.
+CLAUS (Padre de Casandra): Hija aquí tienes todos los víveres que hemos podido obtener gracias a los dioses. Id con cuidado y cuidad a los prójimos tanto como Apolo te bendijo a ti Casandra.
+CASANDRA: Gracias padre. Siempre estaréis en mi y nunca podre agradeceros todo cuanto me habéis ofrecido en esta vida.
+Mis padres se abalanzan hacia mi. Me abrazan y durante unos segundos intento memorizar este momento. No sabré si volveré a verlos otra vez y éste será el ultimo recuerdo que tendré de ellos.
+ADARA (Madre de Casandra): Querida hija mía, estamos muy orgullosos de ti. Una gran vida te espera en Delfos, partid antes no se haga más tardío el día.
+Lisander y yo, iniciamos la marcha. Dejamos atrás las colinas de nuestra queridaAsea.
+
+<<set $background = "EXT. PRADERA DE ARCADIA - TARDE">>
+Mientras las últimas luces de Apolo nos guian por las praderas. Vemos a una mujer que se acerca a nosotros.
+CLÍO: Buenas tardes, me llamo Clío de Nestane. He oído voces sobre la joven muchacha de Asea que obtuvo el don de la clarividencia. Si mi intuición no falla se trata de ti, ¿verdad muchacha?
+CASANDRA: Así es, las voces corren como el viento de Levante.
+CLÍO: Tengo una ofrenda para ti, este collar, es una reliquia de la diosa Hécate, os guiará en vuestro camino. Buena fortuna en la travesía.
+CASANDRA: Gracias Clío, con Hécate a nuestro lado estaremos mucho más a salvo.
+
+<<jump CHAPTER_2>>
+===
+
+title:CHAPTER_2
+position: 325,196
+---
+<<set $background = "EXT. ACANTILADOS DE CORINTIA - ANOCHECER">>
+Continuamos nuestra travesía, llegamos a los acantilados de Corintia, el estrecho que conecta nuestra península con el resto de Grecia. Admiramos la bella naturaleza que nos rodea, nunca antes habíamos visto el mar. Con el frescor de la brisa marina observamos como Apolo desaparece por el horizonte marino. Proseguimos la marcha, quiero romper el silencio entre nosotros, Lisander parece cansado y pensativo.
+LISANDER: Casandra siempre has sido una persona de buen corazón.
+CASANDRA: Eso es mentira!
+LISANDER: Recuerdo un día, cuando éramos niños, quise subirme a la vaca de tu padre que vigilabas. Tu me advertiste de que no lo hiciera y no te hice caso. La vaca se encabritó y me sacudió una coz que me lanzó al suelo. Acudiste en mi socorro prontamente me viste encima de la vaca, me llevaste hasta tu hogar y me sanaste el brazo roto con un cabestrillo de…
+CASANDRA: …de la rama del pequeño roble. Me sorprende que aún recuerdes eso…
+LISANDER (riéndose): Anda ya! si solo fuera esa anécdota (se ríe). Te puedo contar decenas de historias en las que has demostrado tu bondad Casandra.
+CASANDRA (avergonzada): Venga ya! Deja de alabarme, aún no pertenezco al oráculo, somos iguales, individuos de una misma tierra.
+La brisa se torna en un viento huracanado que sacude los arboles. Las hojas y el salitre nos impide avanzar de forma segura. Algunos arboles se desprenden de la tierra, Lisander escucha un árbol abalanzarse hacia mi y me protege de un posible daño.
+CASANDRA: Buenos reflejos Lisander. La clarividencia no fue muy útil esta vez.
+LISANDER: No enfademos a los dioses, Poseidón demuestra su rabia y nos avisa de los peligros que alberga la noche. Deberíamos buscar un lugar seguro donde descansar.
+CASANDRA: Tienes razón…
+CASANDRA: 
+    -> Eso de allí parece una cueva. Ven conmigo.
+    LISANDER: No parece un lugar muy seguro donde descansar. Nunca me gustaron las cavernas.
+    <<jump CHAPTER_2_1>>
+
+    -> A lo lejos me parece ver unas luces, sigamos en esa dirección.
+    LISANDER: Si tu lo dices.
+    <<jump CHAPTER_2_2>>
+
+===
+
+title:CHAPTER_2_1
+position: 123,380
+---
+<<set $background = "1. INT. CUEVA - NOCHE">>
+Lisander y yo nos adentramos en la cueva. Criaturas voladoras salían despedidas al vernos encender una antorcha. Avanzamos hacia el interior de la cueva y vemos una luz acercarse a nosotros. Se trataban de dos hombres, dos individuos que no parecían ir en son de paz.
+CASANDRA:
+    -> Trato de convencerlos de que somos simples viajeros buscando un lugar donde descansar.
+    Los hombres se muestran desconfiados, uno de ellos se acerca hacia mi y me dice.
+    HOMBRE 1 DE LA CAVERNA (desconfiado): ¿Si eres una humilde campesina porque posees un collar tan caro?
+    CASANDRA:
+        -> Se trata de una herencia familiar, es un collar de mis antepasados, hecho con los huesos de mi tatarabuelo Miko.
+        Los hombres parecen creer mis palabras, pero el hombre se sigue acercándose a mi mientras saca su cuchillo de caza.
+        HOMBRE 1 DE LA CAVERNA: Venga niña danos ese collar o puede que te arrepientas de no hacerlo.
+        CASANDRA (asustada): ¡No os daré nada!
+        El hombre inicia un ataque hacia mi cuerpo. Sostengo la daga de mi familia en la mano y la giro hacia el cuerpo de mi agresor. Ante su rabia agresiva su cuerpo se abalanza sobre la daga que sostenía con mis manos en mi vientre. El hombre es apuñalado por mi daga, con una herida mortal. El otro hombre, enfurecido, se apresura hacia a mi violentamente, es entonces cuando Lisander aprovecha para golpearle, el golpe lo deja tendido sobre el suelo de la cueva, absorto y moribundo, gira la cabeza hacia mi.
+        HOMBRE 2 DE LA CAVERNA (enfadado): ¿Cómo fuiste tan temeraria para matar a mi amigo?
+        CASANDRA (asustada y temblando): Y-Y-Yoo…
+        Lisander se acercó hacia mi y me abrazó intensamente. Nos sentamos en el suelo y me cantó la nana de mi
+
+        -> Es un amuleto de culto de la diosa Hécate. La diosa de la magia y el infierno. Si osáis arrebatarme el amuleto, ¡Hécate desatará su ira por vuestros actos impuros!
+        Los hombres absortos y asustados, se doblegan ante el poder de Hécate y deciden marcharse de la cueva. Una vez solos, el cansancio invadió nuestros cuerpos, nos sentamos en el suelo de la cueva y descansamos hasta el regreso de Apolo.
+
+    -> Uso mi daga contra los hombres.
+    Los hombres sacan sus cuchillos de caza y se dirigen hacia mi para atacarme. Es entonces cuando decido…
+    
+
+<<jump CHAPTER_2_CONTINUATION>>
+===
+
+title: CHAPTER_2_2
+position: 633,344
+---
+
+<<jump CHAPTER_2_CONTINUATION>>
+===
+
+title:CHAPTER_2_CONTINUATION
+position: 369,615
+----
+
 ===
