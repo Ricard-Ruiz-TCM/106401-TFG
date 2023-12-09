@@ -214,7 +214,15 @@ Abro los ojos y estoy en un lugar diferente, un espacio brillante y etéreo. Apa
     CASANDRA: No me imaginaba que te preocuparas tanto por mi…
     APOLO: Siempre.
 <<endif>>
-<<jump CHAPTER_2_CONTINUATION_1>>
+// ESTA FRASE ESTA REPETIDA POR QUE NO ES WORK PONERLA POR SEPARADO
+Me despierto con la luz de Apolo y con las fuerzas recargadas.
+<<set $background = "1. INT. CUEVA - DIA">>
+Veo como Lisander prepara el desayuno. Nos miramos y observamos el nuevo día soleado que ha dejado la tormenta de anoche.
+LISANDER: Buenos días Casandra. ¿Quieres comer higos?
+CASANDRA: Buenos días Lisander. ¡Claro! No tengo mucho apetito pero un higo es irrechazable. 
+LISANDER (Sonriendo): ¡Bien! Como puedes ver después de la tormenta viene la calma. Así pues, venga que la vida sigue y Delfos nos espera.
+Acabamos de desayunar, reunimos nuestros haberes y salimos de la cueva.
+<<jump CHAPTER_2_FINAL>>
 ===
 
 title:CHAPTER_2_APOLO_DREAM_2
@@ -236,25 +244,7 @@ position: 450,400
     CASANDRA: ¿Tu de que te arrepientes haber hecho?
     APOLO: … Mejor descansa Casandra.
 <<endif>>
-<<jump CHAPTER_2_CONTINUATION_2>>
-===
-
-title:CHAPTER_2_CONTINUATION_1
-position: 207,582
-----
-Me despierto con la luz de Apolo y con las fuerzas recargadas.
-<<set $background = "1. INT. CUEVA - DIA">>
-Veo como Lisander prepara el desayuno. Nos miramos y observamos el nuevo día soleado que ha dejado la tormenta de anoche.
-LISANDER: Buenos días Casandra. ¿Quieres comer higos?
-CASANDRA: Buenos días Lisander. ¡Claro! No tengo mucho apetito pero un higo es irrechazable. 
-LISANDER (Sonriendo): ¡Bien! Como puedes ver después de la tormenta viene la calma. Así pues, venga que la vida sigue y Delfos nos espera.
-Acabamos de desayunar, reunimos nuestros haberes y salimos de la cueva.
-<<jump CHAPTER_2_FINAL>>
-===
-
-title:CHAPTER_2_CONTINUATION_2
-position: 448,591
-----
+// ESTA FRASE ESTA REPETIDA POR QUE NO ES WORK PONERLA POR SEPARADO
 Me despierto con la luz de Apolo y con las fuerzas recargadas.
 <<set $background = "2. INT. REFUGIO DESCONOCIDO - DIA">>
 Lisander y yo vemos a la pareja comiendo y hablando animadamente.
@@ -273,7 +263,7 @@ Lisander se queda perplejo mirando el oro. Después me mira con una cara de feli
 ===
 
 title:CHAPTER_2_FINAL
-position: 327,818
+position: 287,591
 ---
 <<set $background = "EXT. CORINTIA - DIA">>
 Me pregunto como retomar la marcha.
@@ -320,7 +310,7 @@ Evanthe se unió a nosotros, fuimos a por el arma y nos despedimos de Cirilo y d
 ===
 
 title:CHAPTER_3
-position: 624,818
+position: 584,591
 ----
 <<set $full_path = $full_path + $path + " Chapter - 3: ">>
 <<set $path = "">>
@@ -466,7 +456,7 @@ Continuamos con nuestro camino..
 ===
 
 title:CHAPTER_4
-position: 901,817
+position: 859,593
 ----
 <<set $full_path = $full_path + $path + " Chapter - 4: ">>
 <<set $path = "">>
@@ -537,7 +527,7 @@ Salgo del lecho y me dirijo hacia el templo de la ceremonia.
 ===
 
 title:CHAPTER_5
-position: 901,1013
+position: 861,787
 ----
 <<set $full_path = $full_path + $path + " Chapter - 5: ">>
 <<set $path = "">>
@@ -556,7 +546,7 @@ APOLO: Y bien, ¿Cuál es tu decisión Casandra?
 ===
 
 title:CHAPTER_5_END_1
-position: 988,1198
+position: 935,972
 ---
 Apolo sonríe y me abraza con fuerza.
 APOLO: Agradezco que quieras seguir con el destino que te confié. A pesar de que mis motivos iniciales fueran egoístas. 
@@ -567,7 +557,7 @@ FIN
 ===
 
 title:CHAPTER_5_END_2
-position: 704,1199
+position: 722,973
 ---
 Apolo me sonríe apenado, pero también comprensivo. Usa su magia para quitarme el don, mis ojos vuelven a ser marrones debido a la falta de magia. Apolo y yo nos miramos sonriendo.
 APOLO: Casandra, estoy seguro de que tendrás una buena vida, te cuidaré desde los cielos. 
