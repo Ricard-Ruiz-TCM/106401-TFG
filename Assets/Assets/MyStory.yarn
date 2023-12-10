@@ -34,7 +34,7 @@ position: 72,29
 ---
 <<set $full_path = "Chapter - 1: ">>
 <<set $path = "">>
-<<set $background = "INT. CASA DE CASANDRA - DIA">>
+<<set $background = "INT. CASA DE CASANDRA - DÍA">>
 ADARA: Mi niña, es hora de despertar.
 CASANDRA: Si, madre.
 ADARA: Cariño, hoy es el día. Hoy será el inicio de tu nueva vida. 
@@ -42,7 +42,7 @@ CASANDRA: Una nueva vida que no desee tener. No quiero dejar a mi familia.
 ADARA: Es algo que solo los dioses pueden decidir Casandra. Nosotros solo seguimos sus órdenes. Venga, prepárate.
 Adara, la mujer más importante de mi vida, se marcha de mi habitación. Hastiada, decido salir de la cama y me dirijo al pequeño arroyo donde me purifico para emprender el viaje que me convertirá en Oráculo a los ojos de los dioses y los mortales.
 
-<<set $background = "EXT. ARROYO DE ASEA - DIA">>
+<<set $background = "EXT. ARROYO DE ASEA - DÍA">>
 Entro en las aguas echando un profundo suspiro. El inicio de mi viaje a Delfos, el día que más temía que llegara, ya está aquí.
 CASANDRA: Maldigo mi suerte. ¿Por qué me sucedió esto? Nunca quise ser oráculo. Fue Apolo quien me dio mis poderes sin yo siquiera desearlos.
 APOLO (telepáticamente): Quien no desea algo, es el más indicado para usarlo, niña.
@@ -57,7 +57,7 @@ Apolo desaparece, mi visión vuelve a ver las aguas del arroyo.
 CASANDRA: ¿Qué quieres decir con eso? ¡Oye! 
 … Me he quedado sola.
 
-<<set $background = "EXT. CASA DE CASANDRA - DIA">>
+<<set $background = "EXT. CASA DE CASANDRA - DÍA">>
 Ya aseada y vestida, salgo de mi humilde morada.
 Avanzo un poco más, encontrándome a Lisander, mi mejor amigo y nuevo escolta. Nos conocemos de toda la vida, hemos crecido juntos en Asea, nunca se nos habría ocurrido marchar de Arcadia, y ahora míranos, ambos zarpando de nuestro hogar hacia uno de los Oráculos más importantes Grecia.
 CASANDRA: Hola Lisander.
@@ -173,7 +173,7 @@ Abro los ojos y estoy en un lugar diferente, un espacio brillante y etéreo. Apa
 <<endif>>
 // ESTA FRASE ESTA REPETIDA POR QUE NO ES WORK PONERLA POR SEPARADO
 Me despierto con la luz de Apolo y con las fuerzas recargadas.
-<<set $background = "1. INT. CUEVA - DIA">>
+<<set $background = "1. INT. CUEVA - DÍA">>
 Veo como Lisander prepara el desayuno. Nos miramos y observamos el nuevo día soleado que ha dejado la tormenta de anoche.
 LISANDER: Buenos días Casandra. ¿Quieres comer higos?
 CASANDRA: Buenos días Lisander. ¡Claro! No tengo mucho apetito pero un higo es irrechazable. 
@@ -246,7 +246,7 @@ position: 450,400
 <<endif>>
 // ESTA FRASE ESTA REPETIDA POR QUE NO ES WORK PONERLA POR SEPARADO
 Me despierto con la luz de Apolo y con las fuerzas recargadas.
-<<set $background = "2. INT. REFUGIO DESCONOCIDO - DIA">>
+<<set $background = "2. INT. REFUGIO DESCONOCIDO - DÍA">>
 Lisander y yo vemos a la pareja comiendo y hablando animadamente.
 LISANDER: ¿Va todo bien?
 MARIDO REFUGIO (entusiasmado): ¡Hemos sido bendecidos con un regalo de los dioses! ¡¡Oro!!
@@ -265,7 +265,7 @@ Lisander se queda perplejo mirando el oro. Después me mira con una cara de feli
 title:CHAPTER_2_FINAL
 position: 287,591
 ---
-<<set $background = "EXT. CORINTIA - DIA">>
+<<set $background = "EXT. CORINTIA - DÍA">>
 Me pregunto como retomar la marcha.
 APOLO (telepáticamente): Buenos días Casandra.
 CASANDRA (telepáticamente): Buenos días Apolo, no sabemos como retomar la travesía, la tormenta nos ha desorientado.
@@ -460,7 +460,7 @@ position: 859,593
 ----
 <<set $full_path = $full_path + $path + " Chapter - 4: ">>
 <<set $path = "">>
-<<set $background = "EXT. ALDEA DE DELFOS - DIA">>
+<<set $background = "EXT. ALDEA DE DELFOS - DÍA">>
 A la mañana siguiente, al fin, conseguimos llegar al destino de nuestra travesía, la aldea de Delfos. Como bien nos dijo Evanthe, la aldea era un lugar muy bello, lleno de naturaleza y vida, ahora solo nos faltaba conocer a las personas especiales que lo habitaban.
 Veo como Evanthe y Lisander cada vez están más unidos, quizás demasiado para los dos días que llevan conociéndose. Me mantengo algo distante, pues un sentimiento negativo recorre mi mente. Un sentimiento que me preocupa, pues estoy a punto de tomar una decisión de no retorno. Una decisión que marcará el resto de mi vida y me sumirá en una nueva etapa de mi vida. Una etapa de mi vida que llegará por buena o mala fortuna.
 APOLO (telepáticamente): Casandra, buen trabajo. Habéis superado la travesía, pero lo más importante es el porqué de este viaje. Casandra, querida mortal, has demostrado tu valía y bondad en los múltiples desafíos que han ocurrido en la travesía, y por ello eres digna de pertenecer al oráculo.
