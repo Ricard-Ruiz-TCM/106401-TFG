@@ -12,7 +12,6 @@ position: -202,28
 <<declare $weapon = "">>
 
 // Speakers, personaje principal que habla & animación para ejecutar
-<<declare $speaker = "">>
 <<declare $speaker_anim = "">>
 // Speakers, el resto de personajes al 50% 
 <<declare $speaker_others = "">>
@@ -35,9 +34,8 @@ position: 72,29
 <<set $full_path = "Chapter - 1: ">>
 <<set $path = "">>
 <<set $background = "INT. CASA DE CASANDRA - DÍA">>
-<<set $speaker_others = "adara|casandra">>
 ADARA: Mi niña, es hora de despertar.
-<<set $speaker = "casandra">>
+<<set $speaker_others = "adara|casandra">>
 CASANDRA: Si, madre.
 ADARA: Cariño, hoy es el día. Hoy será el inicio de tu nueva vida. 
 CASANDRA: Una nueva vida que no desee tener. No quiero dejar a mi familia.
@@ -46,8 +44,9 @@ Adara, la mujer más importante de mi vida, se marcha de mi habitación. Hastiad
 
 <<set $background = "EXT. ARROYO DE ASEA - DÍA">>
 Entro en las aguas echando un profundo suspiro. El inicio de mi viaje a Delfos, el día que más temía que llegara, ya está aquí.
+<<set $speaker_others = "">>
 CASANDRA: Maldigo mi suerte. ¿Por qué me sucedió esto? Nunca quise ser oráculo. Fue Apolo quien me dio mis poderes sin yo siquiera desearlos.
-<<set $speaker = "apolo">>
+<<set $speaker_others = "casandra|apolo">>
 APOLO (telepáticamente): Quien no desea algo, es el más indicado para usarlo, niña.
 CASANDRA: ¿Apolo?
 Mi visión se oscurece y noto un cambio de entorno. Parpadeo un par de veces y delante de mi está la brillante figura de Apolo.
@@ -63,7 +62,9 @@ CASANDRA: ¿Qué quieres decir con eso? ¡Oye!
 <<set $background = "EXT. CASA DE CASANDRA - DÍA">>
 Ya aseada y vestida, salgo de mi humilde morada.
 Avanzo un poco más, encontrándome a Lisander, mi mejor amigo y nuevo escolta. Nos conocemos de toda la vida, hemos crecido juntos en Asea, nunca se nos habría ocurrido marchar de Arcadia, y ahora míranos, ambos zarpando de nuestro hogar hacia uno de los Oráculos más importantes Grecia.
+<<set $speaker_others = "">>
 CASANDRA: Hola Lisander.
+<<set $speaker_others = "casandra|lisander">>
 LISANDER: ¡Casandra! Hoy es el gran día. ¿Cómo te sientes?
     -> Digo la verdad “Pues verás estoy algo angustiada con esta nueva vida que me depara.”
         <<set $path = $path + "1">>
@@ -76,6 +77,7 @@ LISANDER: Vivir es un cambio continuo. ¡Al igual que tus ojos! Ahora son dorado
 Mis mejillas se ruborizan y Lisander se torna rojo. Indecisos de que decir o hacer, rompo el silencio.
 CASANDRA: Gracias Lisander.
 Por suerte, aparecen mis padres con los víveres, una capa y una daga para la travesía de 3 días que nos espera.
+<<set $speaker_others = "adara|claus|adara|lisander">>
 CLAUS (Padre de Casandra): Hija aquí tienes todos los víveres que hemos podido obtener gracias a los dioses. Id con cuidado y cuidad a los prójimos tanto como Apolo te bendijo a ti Casandra.
 CASANDRA: Gracias padre. Siempre estaréis en mi y nunca podre agradeceros todo cuanto me habéis ofrecido en esta vida.
 Mis padres se abalanzan hacia mi. Me abrazan y durante unos segundos intento memorizar este momento. No sabré si volveré a verlos otra vez y éste será el ultimo recuerdo que tendré de ellos.
@@ -84,6 +86,7 @@ Lisander y yo, iniciamos la marcha. Dejamos atrás las colinas de nuestra querid
 
 <<set $background = "EXT. PRADERA DE ARCADIA - TARDE">>
 Mientras las últimas luces de Apolo nos guian por las praderas. Vemos a una mujer que se acerca a nosotros.
+<<set $speaker_others = "clio|casandra">>
 CLÍO: Buenas tardes, me llamo Clío de Nestane. He oído voces sobre la joven muchacha de Asea que obtuvo el don de la clarividencia. Si mi intuición no falla se trata de ti, ¿verdad muchacha?
 CASANDRA: Así es, las voces corren como el viento de Levante.
 CLÍO: Tengo una ofrenda para ti, este collar, es una reliquia de la diosa Hécate, os guiará en vuestro camino. Buena fortuna en la travesía.
@@ -98,6 +101,7 @@ position: 392,28
 <<set $path = "">>
 <<set $background = "EXT. ACANTILADOS DE CORINTIA - ANOCHECER">>
 Continuamos nuestra travesía, llegamos a los acantilados de Corintia, el estrecho que conecta nuestra península con el resto de Grecia. Admiramos la bella naturaleza que nos rodea, nunca antes habíamos visto el mar. Con el frescor de la brisa marina observamos como Apolo desaparece por el horizonte marino. Proseguimos la marcha, quiero romper el silencio entre nosotros, Lisander parece cansado y pensativo.
+<<set $speaker_others = "casandra|lisander">>
 LISANDER: Casandra siempre has sido una persona de buen corazón.
 CASANDRA: ¡Eso es mentira!
 LISANDER: Recuerdo un día, cuando éramos niños, quise subirme a la vaca de tu padre que vigilabas. Tu me advertiste de que no lo hiciera y no te hice caso. La vaca se encabritó y me sacudió una coz que me lanzó al suelo. Acudiste en mi socorro prontamente me viste encima de la vaca, me llevaste hasta tu hogar y me sanaste el brazo roto con un cabestrillo de…
