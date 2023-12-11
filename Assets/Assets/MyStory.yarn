@@ -56,6 +56,7 @@ APOLO: Quería saber si eras de fiar, si eras merecedora de mis poderes. Llevaba
 CASANDRA: ¿Predecir el futuro de la gente es ayudarlos? ¡Es volverlos paranoicos! Es hacer que se destruyan a si mismos, pensando que pueden huir de su destino cuando jamás podrán hacerlo.
 APOLO: En eso te equivocas, Casandra. El futuro se puede cambiar, es algo que aun no has visto. Pero lo experimentarás pronto.
 Apolo desaparece, mi visión vuelve a ver las aguas del arroyo.
+<<set $speaker_others = "casandra">>
 CASANDRA: ¿Qué quieres decir con eso? ¡Oye! 
 … Me he quedado sola.
 
@@ -86,7 +87,7 @@ Lisander y yo, iniciamos la marcha. Dejamos atrás las colinas de nuestra querid
 
 <<set $background = "EXT. PRADERA DE ARCADIA - TARDE">>
 Mientras las últimas luces de Apolo nos guian por las praderas. Vemos a una mujer que se acerca a nosotros.
-<<set $speaker_others = "clio|casandra">>
+<<set $speaker_others = "clío|casandra">>
 CLÍO: Buenas tardes, me llamo Clío de Nestane. He oído voces sobre la joven muchacha de Asea que obtuvo el don de la clarividencia. Si mi intuición no falla se trata de ti, ¿verdad muchacha?
 CASANDRA: Así es, las voces corren como el viento de Levante.
 CLÍO: Tengo una ofrenda para ti, este collar, es una reliquia de la diosa Hécate, os guiará en vuestro camino. Buena fortuna en la travesía.
