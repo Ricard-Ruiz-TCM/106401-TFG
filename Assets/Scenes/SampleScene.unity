@@ -576,8 +576,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43d0994212dd97f4eb2107f084e5b04b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _otherFileName: 
-  _speakerFileName: 
+  _speakerFileName: {fileID: 7778558436165635372}
   _speaker: {fileID: 400734841}
   _others: {fileID: 1303183526}
   _speakerPrefab: {fileID: 1732442120329473150, guid: 814a2e337e7f4f34c97698bc18c2da00, type: 3}
