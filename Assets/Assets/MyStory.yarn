@@ -77,7 +77,7 @@ LISANDER: Vivir es un cambio continuo. ¡Al igual que tus ojos! Ahora son dorado
 Mis mejillas se ruborizan y Lisander se torna rojo. Indecisos de que decir o hacer, rompo el silencio.
 CASANDRA: Gracias Lisander.
 Por suerte, aparecen mis padres con los víveres, una capa y una daga para la travesía de 3 días que nos espera.
-<<set $speaker_others = "adara|claus|adara|lisander">>
+<<set $speaker_others = "casandra|claus|adara|lisander">>
 CLAUS (Padre de Casandra): Hija aquí tienes todos los víveres que hemos podido obtener gracias a los dioses. Id con cuidado y cuidad a los prójimos tanto como Apolo te bendijo a ti Casandra.
 CASANDRA: Gracias padre. Siempre estaréis en mi y nunca podre agradeceros todo cuanto me habéis ofrecido en esta vida.
 Mis padres se abalanzan hacia mi. Me abrazan y durante unos segundos intento memorizar este momento. No sabré si volveré a verlos otra vez y éste será el ultimo recuerdo que tendré de ellos.

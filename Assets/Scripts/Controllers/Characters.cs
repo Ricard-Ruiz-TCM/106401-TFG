@@ -39,15 +39,19 @@ public class Characters : MonoBehaviour {
             }
         }
 
-        if ((str != "") && (str != _otherFileName)) {
+        if ((str != _otherFileName)) {
             foreach (Transform t in _others.transform) {
                 GameObject.Destroy(t.gameObject);
             }
             _otherFileName = str;
-            foreach (string s in _otherFileName.Split('|')) {
-                GameObject g = GameObject.Instantiate(_speakerPrefab, _others.transform);
-                g.GetComponent<Image>().sprite = Resources.Load<Sprite>("characters/" + s);
-                g.name = s;
+            if (_otherFileName != "") {
+                foreach (string s in _otherFileName.Split('|')) {
+                    if (_others.transform.Find(s) == null) {
+                        GameObject g = GameObject.Instantiate(_speakerPrefab, _others.transform);
+                        g.GetComponent<Image>().sprite = Resources.Load<Sprite>("characters/" + s);
+                        g.name = s;
+                    }
+                }
             }
         }
 
