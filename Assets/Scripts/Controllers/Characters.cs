@@ -21,7 +21,7 @@ public class Characters : MonoBehaviour {
     private void Update() {
 
         // Speaker
-        string name = _speakerFileName.text.ToLower();
+        string name = (_speakerFileName != null ? _speakerFileName.text.ToLower() : "");
         if (name.IndexOf('(') != -1) {
             name = name.Substring(0, name.IndexOf(' '));
         }
