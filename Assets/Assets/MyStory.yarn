@@ -204,9 +204,9 @@ position: 452,214
 <<set $speaker_others = "mujer refugio|casandra|lisander">>
 Nos acercamos hacia las luces que a medida que nos aproximamos se tornan más intensas y cálidas. Las luces provienen de un refugio en buen estado. Lisander decide llamar a la puerta y tras unos instantes, nos abre la puerta una mujer.
 MUJER REFUGIO (sorprendida): ¡Por los dioses! Entrad ahora mismo, pues corréis peligro afuera.
-Lisander y yo no dudamos en hacer caso a la mujer. Entramos en la el refugio, un lugar cálido y humilde, me recuerda a mi hogar. En una mecedora de madera se encuentra un hombre calentándose las manos en el hogar, supongo que será el marido.
 
 <<set $background = "2. INT. REFUGIO DESCONOCIDO - NOCHE">>
+Lisander y yo no dudamos en hacer caso a la mujer. Entramos en la el refugio, un lugar cálido y humilde, me recuerda a mi hogar. En una mecedora de madera se encuentra un hombre calentándose las manos en el hogar, supongo que será el marido.
 MUJER REFUGIO: Seguro que estaréis cansados, ¿queréis algo de pan y agua? 
 CASANDRA: Gracias, toda ofrenda es bienvenida. Sin embargo, disponemos de víveres y no queremos disponer más de lo necesario.
 <<set $speaker_others = "mujer refugio|marido refugio|casandra|lisander">>
@@ -267,8 +267,8 @@ position: 450,400
     APOLO: … Mejor descansa Casandra.
 <<endif>>
 // ESTA FRASE ESTA REPETIDA POR QUE NO ES WORK PONERLA POR SEPARADO
-Me despierto con la luz de Apolo y con las fuerzas recargadas.
 <<set $background = "2. INT. REFUGIO DESCONOCIDO - DÍA">>
+Me despierto con la luz de Apolo y con las fuerzas recargadas.
 Lisander y yo vemos a la pareja comiendo y hablando animadamente.
 <<set $speaker_others = "lisander|casandra|marido refugio">>
 LISANDER: ¿Va todo bien?
@@ -499,7 +499,7 @@ CASANDRA: Gracias Apolo. Como bien dices, ha sido una travesía intensa y desafi
 Sigo polarizada por la decisión que me espera. Apolo tiene razón, con este don puedo ayudar a mucha gente, sin embargo, es un sacrificio vital.
 APOLO: Bien, dirigíos a lo alto del monte Parnaso. Allí se encuentra tu nuevo hogar Casandra, el oráculo de Delfos. 
 
-<<set $speaker_others = "casandra|lisander|evanthe|caliope">>
+<<set $speaker_others = "casandra|lisander|evanthe|calíope">>
 <<set $background = "EXT. ORÁCULO DE DELFOS - TARDE">> 
 Subimos por los pendientes caminos del monte Parnaso. A medida que nos vamos acercando, nos damos cuenta del inmenso tamaño del complejo del oráculo. Es un espacio lleno de vegetación y construido con piedras calizas y mármol blanco. Un lugar de culto e interacción con los dioses, en especial Apolo.
 Atravesamos la entrada del recinto y las sacerdotisas del oráculo nos miran fijamente mientras cuchichean entre ellas. Aparece una sacerdotisa anciana que se dirige hacia nosotros con seguridad y firmeza.
@@ -507,7 +507,7 @@ CALÍOPE: Buena fortuna, jóvenes. Soy Calíope y me gustaría hablar contigo Ca
 Calíope me mira fijamente y me pregunto cuantas visiones habrá tenido sobre mí para reconocerme tan rápidamente.
 CASANDRA: Como guste, Calíope.
 
-<<set $speaker_others = "casandra|caliope">>
+<<set $speaker_others = "casandra|calíope">>
 <<set $background = "INT. ALCOBA ORÁCULO DE DELFOS - TARDE">> 
 Calíope y yo nos dirigimos a mi habitación del oráculo, una habitación que casi duplicaba el tamaño de mi hogar. 
 CALÍOPE: Joven muchacha, puedo entender por lo que estás pasando y es normal tener dudas sobre la decisión de convertirse en sacerdotisa del oráculo. 
@@ -524,7 +524,7 @@ Incapaz de dormir, salgo de mi habitación, quizás tomar el aire me ayuda a acl
 <<set $background = "EXT. JARDINES DEL ORÁCULO - NOCHE">> 
 Salgo a los jardines del complejo y veo lo que parece ser un santuario. 
 
-<<set $speaker_others = "casandra|clio">>
+<<set $speaker_others = "casandra|clío">>
 <<set $background = "INT. SANTUARIO DEL ORÁCULO - NOCHE">> 
 Entro en el templo, sentada en uno de los bancos de oración, se encuentra una figura que me resulta familiar. 
 CLÍO: Buenas noches, Casandra
