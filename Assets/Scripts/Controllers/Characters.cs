@@ -23,7 +23,7 @@ public class Characters : MonoBehaviour {
 
         // Speaker
         string name = (_speakerFileName.IsActive() ? _speakerFileName.text.ToLower() : "");
-        if (name.IndexOf('(') != -1) { name = name.Substring(0, name.IndexOf(' ')); }
+        if (name.IndexOf('(') != -1) { name = name.Substring(0, name.IndexOf('(') - 1); }
         _speaker.sprite = Resources.Load<Sprite>("characters/" + name);
         _speaker.gameObject.SetActive(_speakerFileName.IsActive());
         if (!_speaker.IsActive()) name = "";
