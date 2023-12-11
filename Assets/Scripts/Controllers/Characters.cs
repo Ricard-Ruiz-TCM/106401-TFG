@@ -27,8 +27,9 @@ public class Characters : MonoBehaviour {
             _speakerFileName = str;
             _speaker.sprite = Resources.Load<Sprite>("characters/" + _speakerFileName);
             foreach (Transform t in _others.transform) {
-                if (t.name == _speakerFileName) {
-                    GameObject.Destroy(t.gameObject);
+                t.gameObject.SetActive(false);
+                if (t.name != _speakerFileName) {
+                    t.gameObject.SetActive(true);
                 }
             }
         }
