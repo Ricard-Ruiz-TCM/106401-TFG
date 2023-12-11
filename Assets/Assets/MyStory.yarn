@@ -128,6 +128,7 @@ position: 207,219
 ---
 <<set $background = "1. INT. CUEVA - NOCHE">>
 Lisander y yo nos adentramos en la cueva. Criaturas voladoras salían despedidas al vernos encender una antorcha. Avanzamos hacia el interior de la cueva y vemos una luz acercarse a nosotros. Se trataban de dos hombres, dos individuos que no parecían ir en son de paz.
+<<set $speaker_others = "hombre 1 de la caverna|hombre 2 de la caverna|casandra|lisander">>
     -> Trato de convencerlos de que somos simples viajeros buscando un lugar donde descansar.
         <<set $path = $path + "1">>
         Los hombres se muestran desconfiados, uno de ellos se acerca hacia mi y me dice.
@@ -167,6 +168,7 @@ title:CHAPTER_2_APOLO_DREAM_1
 position: 208,405
 ----
 Abro los ojos y estoy en un lugar diferente, un espacio brillante y etéreo. Aparece Apolo en frente de mi.
+<<set $speaker_others = "apolo|casandra">>
 // (Si las Decisiones del Capitulo 2 son (1-1-2) o (1-2-2) = Cueva - Viajeros - Hécate (1-1-2) o Cueva - Viajeros - Mentira origen Collar (1-1-1) o Cueva - Daga - No usa don (1-2-2))
 <<if $path == "112" || $path == "122" || $path == "111">>
     APOLO: Buenas noches Casandra, estoy aquí para recordarte lo valioso que es tu don. 
@@ -182,6 +184,7 @@ Abro los ojos y estoy en un lugar diferente, un espacio brillante y etéreo. Apa
 Me despierto con la luz de Apolo y con las fuerzas recargadas.
 <<set $background = "1. INT. CUEVA - DÍA">>
 Veo como Lisander prepara el desayuno. Nos miramos y observamos el nuevo día soleado que ha dejado la tormenta de anoche.
+<<set $speaker_others = "lisander|casandra">>
 LISANDER: Buenos días Casandra. ¿Quieres comer higos?
 CASANDRA: Buenos días Lisander. ¡Claro! No tengo mucho apetito pero un higo es irrechazable. 
 LISANDER (Sonriendo): ¡Bien! Como puedes ver después de la tormenta viene la calma. Así pues, venga que la vida sigue y Delfos nos espera.
@@ -193,11 +196,13 @@ title: CHAPTER_2_2
 position: 452,214
 ---
 <<set $background = "2. INT. REFUGIO DESCONOCIDO - NOCHE">>
+<<set $speaker_others = "mujer refugio|casandra|lisander">>
 Nos acercamos hacia las luces que a medida que nos aproximamos se tornan más intensas y cálidas. Las luces provienen de un refugio en buen estado. Lisander decide llamar a la puerta y tras unos instantes, nos abre la puerta una mujer.
 MUJER REFUGIO (sorprendida): ¡Por los dioses! Entrad ahora mismo, pues corréis peligro afuera.
 Lisander y yo no dudamos en hacer caso a la mujer. Entramos en la el refugio, un lugar cálido y humilde, me recuerda a mi hogar. En una mecedora de madera se encuentra un hombre calentándose las manos en el hogar, supongo que será el marido.
 MUJER REFUGIO: Seguro que estaréis cansados, ¿queréis algo de pan y agua? 
 CASANDRA: Gracias, toda ofrenda es bienvenida. Sin embargo, disponemos de víveres y no queremos disponer más de lo necesario.
+<<set $speaker_others = "mujer refugio|marido refugio|casandra|lisander">>
 MARIDO REFUGIO: ¡Insistimos comed! Sois jóvenes, necesitáis sustento. Si no es mucha molestia, ¿puedo preguntaros que os trae por estas tierras?
 LISANDER: Vamos hacia Atenas en busca de una cura para mi madre enferma.
 MARIDO REFUGIO (comprensivo): La desdicha de los dioses nos afecta a los mortales. Nosotros vamos hacia Micenas, buscamos un mejor futuro. Todo a pesar de que se nos considere extranjeros y no ciudadanos, pues procedemos de unas tierras de Oriente.
@@ -210,6 +215,7 @@ MARIDO REFUGIO (comprensivo): La desdicha de los dioses nos afecta a los mortale
         MUJER REFUGIO: No nos queda otra, nuestra casa quedó destrozada por una inundación. Solo queremos un lugar donde vivir a salvo y en paz, un lugar donde empezar de cero. Micenas es un lugar donde la educación es bien preciada. Pues queremos un futuro de calidad para nuestro hijo.
         La mujer pone sus manos en su vientre, ligeramente abultado. Me invade un sentimiento de desconsuelo y decido comunicarme con Apolo.
 CASANDRA (preocupada): ¿Apolo hay alguna forma de ayudarlos?
+<<set $speaker_others = "apolo|casandra">>
 APOLO: Siempre se puede intentar y tu don te ayudará a conseguirlo. Aunque estoy algo cansado para enseñarte así que, hazme caso. Para ayudar al prójimo en esta ocasión, una donación será suficiente.
 Una vez todos estaban dormidos, me dirigí sigilosamente hasta el morral de la pareja. Lo abrí y coloqué…
     -> una daga
@@ -235,6 +241,7 @@ Una vez todos estaban dormidos, me dirigí sigilosamente hasta el morral de la p
 title:CHAPTER_2_APOLO_DREAM_2
 position: 450,400
 ---
+<<set $speaker_others = "apolo|casandra">>
 // (Si las Decisiones del Capitulo 2 son (2-1-1) o (2-2-1) = Refugio- Don o palabras- Daga)
 <<if $path == "211" || $path == "221">>
     APOLO: Buenas noches Casandra, estoy preocupado por ti. Donar tu daga al prójimo, tu único elemento de protección, es arriesgado.
@@ -255,12 +262,14 @@ position: 450,400
 Me despierto con la luz de Apolo y con las fuerzas recargadas.
 <<set $background = "2. INT. REFUGIO DESCONOCIDO - DÍA">>
 Lisander y yo vemos a la pareja comiendo y hablando animadamente.
+<<set $speaker_others = "lisander|casandra|marido refugio">>
 LISANDER: ¿Va todo bien?
 MARIDO REFUGIO (entusiasmado): ¡Hemos sido bendecidos con un regalo de los dioses! ¡¡Oro!!
 Lisander se queda perplejo mirando el oro. Después me mira con una cara de felicidad, creo que sabe que Apolo tuvo algo que ver.
 // Si Casandra dejo una manzana (Si las Decisiones del Capitulo 2 son (2-1-2) o (2-2-2) = Refugio - Don o palabras - Manzana)—
 <<if $path == "212" || $path == "222">>
     Después de desayunar higos con Lisander y antes de partir me acerco a la pareja.
+    <<set $speaker_others = "lisander|casandra|marido refugio|mujer refugio">>
     CASANDRA: Antes de marchar, debo deciros que las piezas de oro que habéis recibido son ofrendas que debéis entregar a los templos de Atenea, Hera y Afrodita. Según Apolo, estas ofrendas darán fin a la confrontación entre las diosas y evitará que se vuelvan a provocar guerras.
     MUJER REFUGIO: Nunca habíamos tenido una misión tan importante. Gracias Casandra, haremos lo que nos pides. 
     CASANDRA: Mucha suerte y próspera vida en Micenas.
@@ -273,6 +282,7 @@ title:CHAPTER_2_FINAL
 position: 287,591
 ---
 <<set $background = "EXT. CORINTIA - DÍA">>
+<<set $speaker_others = "casandra|apolo">>
 Me pregunto como retomar la marcha.
 APOLO (telepáticamente): Buenos días Casandra.
 CASANDRA (telepáticamente): Buenos días Apolo, no sabemos como retomar la travesía, la tormenta nos ha desorientado.
@@ -281,6 +291,7 @@ CASANDRA (telepáticamente): Gracias Apolo.
 Retomamos el viaje, ahora con un rumbo definido. 
 
 <<set $background = "EXT. ALDEA DE PLATEA - MEDIODIA">>
+<<set $speaker_others = "cirilio|casandra|lisander">>
 Unas horas más tarde, llegamos a una aldea y preguntamos por el herrero. 
 CIRILO: He oído que buscáis a un herrero.
 CASANDRA: Así es, Apolo nos ha guiado hasta esta aldea y buscamos a su viejo amigo Cirilo, un herrero.
@@ -301,6 +312,7 @@ CASANDRA: Pues cogeremos…
         <<set $weapon = "cuchillo">>
 CIRILO: En una hora estará.
 Lisander y yo recorremos la aldea. Hambrientos buscamos un lugar donde comer nuestros víveres a gusto. Mientras comemos, una mujer apuesta se aproxima a nosotros.
+<<set $speaker_others = "casandra|lisander|evanthe">>
 EVANTHE: Hola, me llamo Evanthe. No he podido evitar fijarme en vosotros. ¿Sois viajeros?
 LISANDER: Efectivamente, venimos de la región de Arcadia y nos dirigimos a Delfos.
 EVANTHE: ¡Delfos! Hace 3 solsticios viajé a Delfos, es un lugar muy hermoso y con personas muy especiales…
