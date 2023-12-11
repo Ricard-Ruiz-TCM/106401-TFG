@@ -135,7 +135,7 @@ Lisander y yo nos adentramos en la cueva. Criaturas voladoras salían despedidas
     -> Trato de convencerlos de que somos simples viajeros buscando un lugar donde descansar.
         <<set $path = $path + "1">>
         Los hombres se muestran desconfiados, uno de ellos se acerca hacia mi y me dice.
-        HOMBRE 1 DE LA CAVERNA (desconfiado): ¿Si eres una humilde campesina porque posees un collar tan caro?
+        HOMBRE1 DE LA CAVERNA (desconfiado): ¿Si eres una humilde campesina porque posees un collar tan caro?
             -> Se trata de una herencia familiar, es un collar de mis antepasados, hecho con los huesos de mi tatarabuelo Miko.
                 <<set $path = $path + "1">>
                 Los hombres parecen creer mis palabras, pero el hombre se sigue acercándose a mi mientras saca su cuchillo de caza.

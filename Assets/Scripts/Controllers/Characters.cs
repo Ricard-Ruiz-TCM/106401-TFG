@@ -32,17 +32,13 @@ public class Characters : MonoBehaviour {
         string str = _otherFileName;
         GameManager.instance.GetValue<string>("$speaker_others", out str);
         foreach (Transform t in _others.transform) {
-            if ((t.name == name) || (name == "")) {
-                t.gameObject.SetActive(false);
-            } else {
+            t.gameObject.SetActive(false);
+            if ((t.name != name) && (name != "") && (str.IndexOf(t.name) != -1)) {
                 t.gameObject.SetActive(true);
             }
         }
 
         if ((str != _otherFileName)) {
-            foreach (Transform t in _others.transform) {
-                GameObject.Destroy(t.gameObject);
-            }
             _otherFileName = str;
             if (_otherFileName != "") {
                 foreach (string s in _otherFileName.Split('|')) {
