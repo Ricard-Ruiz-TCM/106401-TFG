@@ -33,7 +33,7 @@ position: 72,29
 ---
 <<set $full_path = "Chapter - 1: ">>
 <<set $path = "">>
-<<set $background = "INT. CASA DE CASANDRA - DÍA">>
+<<set $background = "INT. CASA DE CASANDRA - DIA">>
 ADARA: Mi niña, es hora de despertar.
 <<set $speaker_others = "adara|casandra">>
 CASANDRA: Si, madre.
@@ -42,7 +42,7 @@ CASANDRA: Una nueva vida que no desee tener. No quiero dejar a mi familia.
 ADARA: Es algo que solo los dioses pueden decidir Casandra. Nosotros solo seguimos sus órdenes. Venga, prepárate.
 Adara, la mujer más importante de mi vida, se marcha de mi habitación. Hastiada, decido salir de la cama y me dirijo al pequeño arroyo donde me purifico para emprender el viaje que me convertirá en Oráculo a los ojos de los dioses y los mortales.
 
-<<set $background = "EXT. ARROYO DE ASEA - DÍA">>
+<<set $background = "EXT. ARROYO DE ASEA - DIA">>
 Entro en las aguas echando un profundo suspiro. El inicio de mi viaje a Delfos, el día que más temía que llegara, ya está aquí.
 <<set $speaker_others = "">>
 CASANDRA: Maldigo mi suerte. ¿Por qué me sucedió esto? Nunca quise ser oráculo. Fue Apolo quien me dio mis poderes sin yo siquiera desearlos.
@@ -60,7 +60,7 @@ Apolo desaparece, mi visión vuelve a ver las aguas del arroyo.
 CASANDRA: ¿Qué quieres decir con eso? ¡Oye! 
 … Me he quedado sola.
 
-<<set $background = "EXT. CASA DE CASANDRA - DÍA">>
+<<set $background = "EXT. CASA DE CASANDRA - DIA_2">>
 Ya aseada y vestida, salgo de mi humilde morada.
 Avanzo un poco más, encontrándome a Lisander, mi mejor amigo y nuevo escolta. Nos conocemos de toda la vida, hemos crecido juntos en Asea, nunca se nos habría ocurrido marchar de Arcadia, y ahora míranos, ambos zarpando de nuestro hogar hacia uno de los Oráculos más importantes Grecia.
 <<set $speaker_others = "">>
@@ -109,6 +109,8 @@ LISANDER: Recuerdo un día, cuando éramos niños, quise subirme a la vaca de tu
 CASANDRA: …de la rama del pequeño roble. Me sorprende que aún recuerdes eso…
 LISANDER (riéndose): Anda ya! si solo fuera esa anécdota (se ríe). Te puedo contar decenas de historias en las que has demostrado tu bondad Casandra.
 CASANDRA (avergonzada): Venga ya! Deja de alabarme, aún no pertenezco al oráculo, somos iguales, individuos de una misma tierra.
+
+<<set $background = "EXT. BOSQUE DE CORINTIA - ANOCHECER">>
 La brisa se torna en un viento huracanado que sacude los arboles. Las hojas y el salitre nos impide avanzar de forma segura. Algunos arboles se desprenden de la tierra, Lisander escucha un árbol abalanzarse hacia mi y me protege de un posible daño.
 CASANDRA: Buenos reflejos Lisander. La clarividencia no fue muy útil esta vez.
 LISANDER: No enfademos a los dioses, Poseidón demuestra su rabia y nos avisa de los peligros que alberga la noche. Deberíamos buscar un lugar seguro donde descansar.
@@ -129,7 +131,7 @@ position: 207,219
 ---
 <<set $background = "1. INT. CUEVA - NOCHE">>
 Lisander y yo nos adentramos en la cueva. Criaturas voladoras salían despedidas al vernos encender una antorcha. Avanzamos hacia el interior de la cueva y vemos una luz acercarse a nosotros. Se trataban de dos hombres, dos individuos que no parecían ir en son de paz.
-<<set $speaker_others = "hombre 1 de la caverna|hombre 2 de la caverna|casandra|lisander">>
+<<set $speaker_others = "hombre1 de la caverna|hombre2 de la caverna|casandra|lisander">>
     -> Trato de convencerlos de que somos simples viajeros buscando un lugar donde descansar.
         <<set $path = $path + "1">>
         Los hombres se muestran desconfiados, uno de ellos se acerca hacia mi y me dice.
@@ -137,10 +139,10 @@ Lisander y yo nos adentramos en la cueva. Criaturas voladoras salían despedidas
             -> Se trata de una herencia familiar, es un collar de mis antepasados, hecho con los huesos de mi tatarabuelo Miko.
                 <<set $path = $path + "1">>
                 Los hombres parecen creer mis palabras, pero el hombre se sigue acercándose a mi mientras saca su cuchillo de caza.
-                HOMBRE 1 DE LA CAVERNA: Venga niña danos ese collar o puede que te arrepientas de no hacerlo.
+                HOMBRE1 DE LA CAVERNA: Venga niña danos ese collar o puede que te arrepientas de no hacerlo.
                 CASANDRA (asustada): ¡No os daré nada!
                 El hombre inicia un ataque hacia mi cuerpo. Sostengo la daga de mi familia en la mano y la giro hacia el cuerpo de mi agresor. Ante su rabia agresiva su cuerpo se abalanza sobre la daga que sostenía con mis manos en mi vientre. El hombre es apuñalado por mi daga, con una herida mortal. El otro hombre, enfurecido, se apresura hacia a mi violentamente, es entonces cuando Lisander aprovecha para golpearle, el golpe lo deja tendido sobre el suelo de la cueva, absorto y moribundo, gira la cabeza hacia mi.
-                HOMBRE 2 DE LA CAVERNA (enfadado): ¿Cómo fuiste tan temeraria para matar a mi amigo?
+                HOMBRE2 DE LA CAVERNA (enfadado): ¿Cómo fuiste tan temeraria para matar a mi amigo?
                 CASANDRA (asustada y temblando): Y-Y-Yoo…
                 Lisander se acercó hacia mi y me abrazó intensamente. Nos sentamos en el suelo y me cantó la nana de mi
             -> Es un amuleto de culto de la diosa Hécate. La diosa de la magia y el infierno. Si osáis arrebatarme el amuleto, ¡Hécate desatará su ira por vuestros actos impuros!
