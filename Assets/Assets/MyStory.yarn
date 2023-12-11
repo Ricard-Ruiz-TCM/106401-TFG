@@ -35,7 +35,9 @@ position: 72,29
 <<set $full_path = "Chapter - 1: ">>
 <<set $path = "">>
 <<set $background = "INT. CASA DE CASANDRA - DÍA">>
+<<set $speaker_others = "adara|casandra">>
 ADARA: Mi niña, es hora de despertar.
+<<set $speaker = "casandra">>
 CASANDRA: Si, madre.
 ADARA: Cariño, hoy es el día. Hoy será el inicio de tu nueva vida. 
 CASANDRA: Una nueva vida que no desee tener. No quiero dejar a mi familia.
@@ -45,6 +47,7 @@ Adara, la mujer más importante de mi vida, se marcha de mi habitación. Hastiad
 <<set $background = "EXT. ARROYO DE ASEA - DÍA">>
 Entro en las aguas echando un profundo suspiro. El inicio de mi viaje a Delfos, el día que más temía que llegara, ya está aquí.
 CASANDRA: Maldigo mi suerte. ¿Por qué me sucedió esto? Nunca quise ser oráculo. Fue Apolo quien me dio mis poderes sin yo siquiera desearlos.
+<<set $speaker = "apolo">>
 APOLO (telepáticamente): Quien no desea algo, es el más indicado para usarlo, niña.
 CASANDRA: ¿Apolo?
 Mi visión se oscurece y noto un cambio de entorno. Parpadeo un par de veces y delante de mi está la brillante figura de Apolo.
@@ -77,7 +80,7 @@ CLAUS (Padre de Casandra): Hija aquí tienes todos los víveres que hemos podido
 CASANDRA: Gracias padre. Siempre estaréis en mi y nunca podre agradeceros todo cuanto me habéis ofrecido en esta vida.
 Mis padres se abalanzan hacia mi. Me abrazan y durante unos segundos intento memorizar este momento. No sabré si volveré a verlos otra vez y éste será el ultimo recuerdo que tendré de ellos.
 ADARA (Madre de Casandra): Querida hija mía, estamos muy orgullosos de ti. Una gran vida te espera en Delfos, partid antes no se haga más tardío el día.
-Lisander y yo, iniciamos la marcha. Dejamos atrás las colinas de nuestra queridaAsea.
+Lisander y yo, iniciamos la marcha. Dejamos atrás las colinas de nuestra querida Asea.
 
 <<set $background = "EXT. PRADERA DE ARCADIA - TARDE">>
 Mientras las últimas luces de Apolo nos guian por las praderas. Vemos a una mujer que se acerca a nosotros.
